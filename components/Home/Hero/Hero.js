@@ -1,6 +1,7 @@
 import styles from "./Hero.module.css";
 import SectionWrapper from "@/components/core/Wrappers/SectionWrapper";
 import InsertHtml from "@/components/core/InsertHtml/InsertHtml";
+import MainButton from "@/components/core/Buttons/MainButton/MainButton";
 import Image from "next/image";
 import { Ubuntu } from "next/font/google";
 
@@ -16,6 +17,7 @@ export default function Hero({
   filterWallpaper,
   greetings,
   name,
+  backgroundImageName,
   introductionMD,
   heroButtons,
   displayProfile,
@@ -35,33 +37,37 @@ export default function Hero({
             <h1
               className={`${styles.name} ${ubuntu.className}`}
               style={{
-                backgroundImage: `linear-gradient(90deg, rgba(34,122,255,1) 0%, rgba(40,201,250,1) 38%, rgba(14,137,219,1) 75%)`,
+                backgroundImage:
+                  backgroundImageName || "var(--default-backgroundImageName)",
               }}
             >
               {name || "Somesh Kumar"}
             </h1>
             {introductionMD && <InsertHtml externalHtml={introductionMD} />}
-            {/* <div className={styles.buttons}>
-              {heroButtons.map((heroButton, index) => {
-                return (
-                  <MainButton
-                    key={index}
-                    text={heroButton.key}
-                    href={heroButton.value}
-                    backgroundColor={"#1A9FEA"}
-                  />
-                );
-              })}
-            </div> */}
+            {heroButtons && (
+              <div className={styles.buttons}>
+                {heroButtons.map((heroButton, index) => {
+                  return (
+                    <MainButton
+                      key={index}
+                      text={heroButton.key}
+                      href={heroButton.value}
+                    />
+                  );
+                })}
+              </div>
+            )}
           </section>
           <section className={styles.rightPortion}>
-            {displayProfile && <Image
-              src={displayProfile}
-              width={800}
-              height={800}
-              alt={displayProfileAlt || "Display Profile Image"}
-              className={styles.displayProfile}
-            />}
+            {displayProfile && (
+              <Image
+                src={displayProfile}
+                width={800}
+                height={800}
+                alt={displayProfileAlt || "Display Profile Image"}
+                className={styles.displayProfile}
+              />
+            )}
           </section>
         </section>
       </SectionWrapper>

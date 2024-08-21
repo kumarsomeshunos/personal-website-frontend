@@ -1,6 +1,7 @@
 import Navbar from "@/components/core/Navbar/Navbar";
 import SectionWrapper from "@/components/core/Wrappers/SectionWrapper";
 import Hero from "@/components/Home/Hero/Hero";
+import Projects from "@/components/Home/Projects/Projects";
 
 const name = "Somesh Kumar";
 const version = "MK-VII";
@@ -60,9 +61,20 @@ export default function Home() {
         displayProfile={displayProfile}
         heroButtons={heroButtons}
       />
+      <Projects
+        backgroundWallpaper={
+          'lightblue url("https://wallpapers.com/images/featured/pattern-4u7ed6koskqhcez1.jpg") no-repeat fixed center'
+        }
+        colorMain={"yellow"}
+        heading={"Projects"}
+        subheading={"This is the subheading you've been wating for years, right?"}
+        backgroundImageName={
+          "repeating-linear-gradient(45deg, #ff7e5f, #ff7e5f 10px, #feb47b 10px, #feb47b 20px)"
+        }
+      />
       <Hero
         backgroundWallpaper={
-          'lightblue url("https://images6.alphacoders.com/132/1323881.png") no-repeat fixed center; '
+          'lightblue url("https://images6.alphacoders.com/132/1323881.png") no-repeat fixed center'
         }
         introductionMD={introductionMD}
         displayProfile={displayProfile}
@@ -73,14 +85,14 @@ export default function Home() {
       <Hero introductionMD={introductionMD} displayProfile={displayProfile} />
       <Hero
         backgroundWallpaper={
-          'lightblue url("https://images6.alphacoders.com/132/1323881.png") no-repeat fixed center; '
+          'lightblue url("https://images6.alphacoders.com/132/1323881.png") no-repeat fixed center'
         }
         introductionMD={introductionMD}
         displayProfile={displayProfile}
       />
       <Hero
         backgroundWallpaper={
-          'lightblue url("https://wallpapers.com/images/featured/pattern-4u7ed6koskqhcez1.jpg") no-repeat fixed center; '
+          'lightblue url("https://wallpapers.com/images/featured/pattern-4u7ed6koskqhcez1.jpg") no-repeat fixed center'
         }
         introductionMD={introductionMD}
         displayProfile={displayProfile}

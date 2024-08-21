@@ -20,3 +20,5 @@
 > Color variable which will be used in theming engine is stored in GlobalWrapper (dangeroudHTML)
 
 > Images are allowed from all hostnames currently.
+
+> Data integration from APIs should be done in pages.

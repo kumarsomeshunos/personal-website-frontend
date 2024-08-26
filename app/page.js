@@ -1,5 +1,6 @@
 import Navbar from "@/components/core/Navbar/Navbar";
 import SectionWrapper from "@/components/core/Wrappers/SectionWrapper";
+import Blogs from "@/components/Home/Blogs/Blogs";
 import Hero from "@/components/Home/Hero/Hero";
 import Projects from "@/components/Home/Projects/Projects";
 
@@ -63,14 +64,31 @@ export default function Home() {
       />
       <Projects
         backgroundWallpaper={
-          'lightblue url("https://wallpapers.com/images/featured/pattern-4u7ed6koskqhcez1.jpg") no-repeat fixed center'
+          'lightblue url("https://images6.alphacoders.com/132/1323881.png") no-repeat fixed center'
         }
         colorMain={"yellow"}
         heading={"Projects"}
-        subheading={"This is the subheading you've been wating for years, right?"}
+        subheading={
+          "This is the subheading you've been wating for years, right?"
+        }
         backgroundImageName={
           "repeating-linear-gradient(45deg, #ff7e5f, #ff7e5f 10px, #feb47b 10px, #feb47b 20px)"
         }
+      />
+      <Blogs
+        backgroundWallpaper={
+          'lightblue url("https://wallpapers.com/images/featured/pattern-4u7ed6koskqhcez1.jpg") no-repeat fixed center'
+        }
+        colorMain={"yellow"}
+        heading={"Blogs"}
+        subheading={
+          "This is the subheading you've been wating for years, right?"
+        }
+        backgroundImageName={
+          "repeating-linear-gradient(45deg, #ff7e5f, #ff7e5f 10px, #feb47b 10px, #feb47b 20px)"
+        }
+        backgroundMain={"black"}
+        filterWallpaper={"blur(50px)"}
       />
       <Hero
         backgroundWallpaper={

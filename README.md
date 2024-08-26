@@ -22,3 +22,7 @@
 > Images are allowed from all hostnames currently.
 
 > Data integration from APIs should be done in pages.
+
+> Except the above changes now
+
+Data integration from API's should be done in pages except if the componenet includes core component in itself like ProjectCard or CardHolder then it should be done inside the component itself.

@@ -1,0 +1,9 @@
+.card {
+    width: 100%;
+    border: 1px solid red;
+    background-color: pink;
+}
+
+.article {
+    padding: 0 0 1rem 0;
+}

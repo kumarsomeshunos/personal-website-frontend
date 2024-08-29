@@ -3,6 +3,7 @@ import SectionWrapper from "@/components/core/Wrappers/SectionWrapper";
 import Heading from "@/components/core/Heading/Heading";
 import MasonryCardHolder from "@/components/core/Cards/MasonryCardHolder/MasonryCardHolder";
 import ProjectCard from "@/components/core/Cards/ProjectCard/ProjectCard";
+import MainButton from "@/components/core/Buttons/MainButton/MainButton";
 
 export default function Projects({
   backgroundMain,
@@ -74,13 +75,13 @@ export default function Projects({
             <ProjectCard
               number={7}
               data={
-                "this is something you need to fkin know. this is something you need to fkin know. this is something you need to fkin know. this is something you need to fkin know."
+                "this is something you need to fkin know. this is something you need to fkin know. this is something you need to fkin know. this is something you need to fkin know.this is something you need to fkin know. this is something you need to fkin know. this is something you need to fkin know. this is something you need to fkin know."
               }
             />
             <ProjectCard
               number={8}
               data={
-                "this is something you need to fkin know. this is something you need to fkin know. this is something you need to fkin know. this is something you need to fkin know."
+                "this is something you need to fkin know. this is something you need to fkin know. this is something you need to fkin know. this is something you need to fkin know.this is something you need to fkin know. this is something you need to fkin know.this is something you need to fkin know. this is something you need to fkin know. this is something you need to fkin know. this is something you need to fkin know.this is something you need to fkin know. this is something you need to fkin know. this is something you need to fkin know. this is something you need to fkin know.this is something you need to fkin know. this is something you need to fkin know. this is something you need to fkin know. this is something you need to fkin know."
               }
             />
             <ProjectCard
@@ -90,6 +91,9 @@ export default function Projects({
               }
             />
           </MasonryCardHolder>
+          <div className={styles.buttons}>
+          <MainButton text={"All Projects"} href={"/projects"} />
+          </div>
         </section>
       </SectionWrapper>
     </section>

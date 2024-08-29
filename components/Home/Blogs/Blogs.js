@@ -3,6 +3,7 @@ import SectionWrapper from "@/components/core/Wrappers/SectionWrapper";
 import Heading from "@/components/core/Heading/Heading";
 import MasonryCardHolder from "@/components/core/Cards/MasonryCardHolder/MasonryCardHolder";
 import BlogCard from "@/components/core/Cards/BlogCard/BlogCard";
+import MainButton from "@/components/core/Buttons/MainButton/MainButton";
 
 export default function Blogs({
   backgroundMain,
@@ -78,7 +79,7 @@ export default function Blogs({
             />
             <BlogCard
               number={1}
-              data={"this is something you need to fkin know."}
+              data={"this is something you need to fkin know.this is something you need to fkin know.this is something you need to fkin know.this is something you need to fkin know.this is something you need to fkin know.this is something you need to fkin know.this is something you need to fkin know.this is something you need to fkin know.this is something you need to fkin know.this is something you need to fkin know.this is something you need to fkin know."}
             />
             <BlogCard
               number={1}
@@ -87,6 +88,9 @@ export default function Blogs({
               }
             />
           </MasonryCardHolder>
+          <div className={styles.buttons}>
+            <MainButton text={"All Projects"} href={"/projects"} />
+          </div>
         </section>
       </SectionWrapper>
     </section>

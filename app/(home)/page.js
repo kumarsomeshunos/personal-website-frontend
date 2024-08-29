@@ -2,6 +2,7 @@ import Navbar from "@/components/core/Navbar/Navbar";
 import SectionWrapper from "@/components/core/Wrappers/SectionWrapper";
 import Blogs from "@/components/Home/Blogs/Blogs";
 import Hero from "@/components/Home/Hero/Hero";
+import Now from "@/components/Home/Now/Now";
 import Projects from "@/components/Home/Projects/Projects";
 
 const name = "Somesh Kumar";
@@ -51,7 +52,7 @@ export default function Home() {
     <>
       <Navbar
         backgroundWallpaper={
-          "repeating-linear-gradient(45deg, #ff7e5f, #ff7e5f 10px, #feb47b 10px, #feb47b 20px) center / cover no-repeat fixed"
+          "linear-gradient(270deg, #000000 0%, #093e4c 50%, #1a1a1c 100%)"
         }
         name={name}
         version={version}
@@ -63,8 +64,11 @@ export default function Home() {
         heroButtons={heroButtons}
       />
       <Projects
+        // backgroundWallpaper={
+        //   'lightblue url("https://images6.alphacoders.com/132/1323881.png") no-repeat fixed center'
+        // }
         backgroundWallpaper={
-          'lightblue url("https://images6.alphacoders.com/132/1323881.png") no-repeat fixed center'
+          'lightblue url("https://wallpapers.com/images/featured/pattern-4u7ed6koskqhcez1.jpg") no-repeat fixed center'
         }
         colorMain={"yellow"}
         heading={"Projects"}
@@ -74,11 +78,13 @@ export default function Home() {
         backgroundImageName={
           "repeating-linear-gradient(45deg, #ff7e5f, #ff7e5f 10px, #feb47b 10px, #feb47b 20px)"
         }
+        backgroundMain={"black"}
+        filterWallpaper={"blur(50px)"}
       />
       <Blogs
-        backgroundWallpaper={
-          'lightblue url("https://wallpapers.com/images/featured/pattern-4u7ed6koskqhcez1.jpg") no-repeat fixed center'
-        }
+        // backgroundWallpaper={
+        //   'lightblue url("https://wallpapers.com/images/featured/pattern-4u7ed6koskqhcez1.jpg") no-repeat fixed center'
+        // }
         colorMain={"yellow"}
         heading={"Blogs"}
         subheading={
@@ -87,8 +93,22 @@ export default function Home() {
         backgroundImageName={
           "repeating-linear-gradient(45deg, #ff7e5f, #ff7e5f 10px, #feb47b 10px, #feb47b 20px)"
         }
-        backgroundMain={"black"}
-        filterWallpaper={"blur(50px)"}
+        // backgroundMain={"black"}
+        // filterWallpaper={"blur(50px)"}
+      />
+      <Now
+        backgroundWallpaper={
+          'center / cover no-repeat url("https://beta.kumarsomesh.in/_next/image?url=https%3A%2F%2Flastfm.freetls.fastly.net%2Fi%2Fu%2F300x300%2Fb385713f95702a0425640da136618c60.jpg&w=640&q=75")'
+        }
+        colorMain={"yellow"}
+        heading={"Now"}
+        subheading={
+          "This is the subheading you've been wating for years, right?"
+        }
+        backgroundImageName={
+          "repeating-linear-gradient(45deg, #ff7e5f, #ff7e5f 10px, #feb47b 10px, #feb47b 20px)"
+        }
+        filterWallpaper={"blur(2rem)"}
       />
       <Hero
         backgroundWallpaper={
@@ -115,59 +135,6 @@ export default function Home() {
         introductionMD={introductionMD}
         displayProfile={displayProfile}
       />
-      <SectionWrapper>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-      </SectionWrapper>
-      <SectionWrapper>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-        <p>Hello</p>
-      </SectionWrapper>
     </>
   );
 }

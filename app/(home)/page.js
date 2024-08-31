@@ -70,7 +70,7 @@ export default function Home() {
         backgroundWallpaper={
           'lightblue url("https://wallpapers.com/images/featured/pattern-4u7ed6koskqhcez1.jpg") no-repeat fixed center'
         }
-        colorMain={"yellow"}
+        colorMain={"white"}
         heading={"Projects"}
         subheading={
           "This is the subheading you've been wating for years, right?"

@@ -7,7 +7,7 @@
   --default-backgroundMain: #000;
   --default-colorMain: rgba(255, 255, 255, 1);
   --default-backgroundWallpaper: linear-gradient(270deg, #000000 0%, #093e4c 50%, #1a1a1c 100%);
-  
+
   /* --default-backgroundWallpaper: repeating-linear-gradient(45deg, #ff7e5f, #ff7e5f 10px, #feb47b 10px, #feb47b 20px) center / cover no-repeat fixed; */
   /* url("https://images.unsplash.com/photo-1715273157640-b0c2a2bec178?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTcxMTA4MTF8&ixlib=rb-4.0.3&q=85") center / cover no-repeat fixed; */
   --default-filterWallpaper: blur(2rem);
@@ -34,6 +34,38 @@
   --default-borderRadiusButtonHover: 0;
   --default-textDecorationButtonHover: none;
   --default-transitionButtonHover: all 0.5s ease-in-out;
+
+  /* Project Card Component */
+  --defalut-backgroundProjectCard: transparent;
+  --deafult-borderProjectCard: 1px solid rgba(255, 255, 255, 0.5);
+  --default-box-shadowProjectCard: 0px 0px 0px 0px white;
+  --default-colorProjectCard: white;
+  --default-borderRadiusProjectCard: 10px;
+  --default-textDecorationProjectCard: none;
+  --default-transitionProjectCard: all 0.5s ease-in-out;
+  --defalut-backgroundProjectCardHover: white;
+  --deafult-borderProjectCardHover: 1px solid rgba(255, 255, 255, 1);
+  --default-box-shadowProjectCardHover: 0px 0px 0px 0px white;
+  --default-colorProjectCardHover: black;
+  --default-borderRadiusProjectCardHover: 10px;
+  --default-textDecorationProjectCardHover: none;
+  --default-transitionProjectCardHover: all 0.5s ease-in-out;
+
+  /* Blog Card Component */
+  --defalut-backgroundBlogCard: transparent;
+  --deafult-borderBlogCard: 1px solid rgba(255, 255, 255, 0.5);
+  --default-box-shadowBlogCard: 0px 0px 0px 0px white;
+  --default-colorBlogCard: white;
+  --default-borderRadiusBlogCard: 10px;
+  --default-textDecorationBlogCard: none;
+  --default-transitionBlogCard: all 0.5s ease-in-out;
+  --defalut-backgroundBlogCardHover: white;
+  --deafult-borderBlogCardHover: 1px solid rgba(255, 255, 255, 1);
+  --default-box-shadowBlogCardHover: 0px 0px 0px 0px white;
+  --default-colorBlogCardHover: black;
+  --default-borderRadiusBlogCardHover: 10px;
+  --default-textDecorationBlogCardHover: none;
+  --default-transitionBlogCardHover: all 0.5s ease-in-out;
 
   /* Anchor Tag */
   --default-link-border-bottom: 1px solid rgba(255, 255, 255, 0.3);

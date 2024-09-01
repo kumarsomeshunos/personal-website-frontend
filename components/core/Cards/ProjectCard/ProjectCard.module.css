@@ -1,21 +1,23 @@
 .main {
-    padding: 1rem 0rem 0rem 0rem;
-}
-
-.safariFixDiv {
+    margin: 1rem 0rem 0rem 0rem;
     width: 100%;
-    border-radius: 10px;
-    color: var(--main-text-color);
-    background-color: var(--card-background-color);
-    transition: all 0.5s ease-in-out;
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: var(--defalut-backgroundProjectCard);
+    border: var(--deafult-borderProjectCard);
+    box-shadow: var(--default-box-shadowProjectCard);
+    color: var(--default-colorProjectCard);
+    border-radius: var(--default-borderRadiusProjectCard);
+    text-decoration: var(--default-textDecorationProjectCard);
+    transition: var(--default-transitionProjectCard);
 }
 
-.safariFixDiv:hover {
-    box-shadow: var(--card-box-shadow);
-    border: 1px solid rgba(255, 255, 255, 1);
-    background-color: white;
-    color: black;
+.main:hover {
+    background: var(--defalut-backgroundProjectCardHover);
+    border: var(--deafult-borderProjectCardHover);
+    box-shadow: var(--default-box-shadowProjectCardHover);
+    color: var(--default-colorProjectCardHover);
+    border-radius: var(--default-borderRadiusProjectCardHover);
+    text-decoration: var(--default-textDecorationProjectCardHover);
+    transition: var(--default-transitionProjectCardHover);
 }
 
 .wrapper {
@@ -34,7 +36,7 @@
     margin: 0.5rem 0;
 }
 
-.divInfo {
+.timeAndStatus {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -49,11 +51,11 @@
     color: #0F0;
 }
 
-.statusRed {
+.statusOrange {
     color: orange;
 }
 
-.divButtons {
+.buttons {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;

@@ -9,9 +9,41 @@ export default function BlogCard({
   description,
   thumbnail,
   slug,
+  background,
+  border,
+  boxShadow,
+  color,
+  borderRadius,
+  textDecoration,
+  transition,
+  backgroundHover,
+  borderHover,
+  boxShadowHover,
+  colorHover,
+  borderRadiusHover,
+  textDecorationHover,
+  transitionHover,
 }) {
   return (
-    <article className={styles.main}>
+    <article
+      className={styles.main}
+      style={{
+        "--defalut-backgroundBlogCard": background,
+        "--deafult-borderBlogCard": border,
+        "--default-box-shadowBlogCard": boxShadow,
+        "--default-colorBlogCard": color,
+        "--default-borderRadiusBlogCard": borderRadius,
+        "--default-textDecorationBlogCard": textDecoration,
+        "--default-transitionBlogCard": transition,
+        "--defalut-backgroundBlogCardHover": backgroundHover,
+        "--deafult-borderBlogCardHover": borderHover,
+        "--default-box-shadowBlogCardHover": boxShadowHover,
+        "--default-colorBlogCardHover": colorHover,
+        "--default-borderRadiusBlogCardHover": borderRadiusHover,
+        "--default-textDecorationBlogCardHover": textDecorationHover,
+        "--default-transitionBlogCardHover": transitionHover,
+      }}
+    >
       {thumbnail && (
         <div className={styles.image}>
           <Image

@@ -18,6 +18,20 @@ const dummyProps = {
   ],
   slug: "amazing-project",
   details: true,
+  // backgroundHover: "pink",
+  // border,
+  // boxShadow,
+  // color,
+  // borderRadius,
+  // textDecoration,
+  // transition,
+  // backgroundHover,
+  // borderHover,
+  // boxShadowHover,
+  // colorHover,
+  // borderRadiusHover,
+  // textDecorationHover,
+  // transitionHover,
 };
 
 const dummyProps1 = {

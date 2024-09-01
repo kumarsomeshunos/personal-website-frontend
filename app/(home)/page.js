@@ -110,7 +110,7 @@ export default function Home() {
         }
         filterWallpaper={"blur(2rem)"}
       />
-      <Hero
+      {/* <Hero
         backgroundWallpaper={
           'lightblue url("https://images6.alphacoders.com/132/1323881.png") no-repeat fixed center'
         }
@@ -134,7 +134,7 @@ export default function Home() {
         }
         introductionMD={introductionMD}
         displayProfile={displayProfile}
-      />
+      /> */}
     </>
   );
 }

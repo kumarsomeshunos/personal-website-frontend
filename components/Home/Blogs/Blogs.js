@@ -8,25 +8,31 @@ import MainButton from "@/components/core/Buttons/MainButton/MainButton";
 const dummyData = {
   title: "Understanding React Hooks: A Comprehensive Guide",
   postedOn: "2024-08-15T12:00:00Z",
-  tags: [
-    { key: "React" },
-    { key: "JavaScript" },
-    { key: "Web Development" },
-  ],
+  tags: [{ key: "React" }, { key: "JavaScript" }, { key: "Web Development" }],
   description:
     "This blog post provides a deep dive into React hooks, explaining how they work, why they're useful, and how to use them effectively in your React applications.",
   thumbnail: "https://via.placeholder.com/200", // Placeholder image URL
   slug: "understanding-react-hooks",
+  // backgroundHover: "pink",
+  // border,
+  // boxShadow,
+  // color,
+  // borderRadius,
+  // textDecoration,
+  // transition,
+  // backgroundHover,
+  // borderHover,
+  // boxShadowHover,
+  // colorHover,
+  // borderRadiusHover,
+  // textDecorationHover,
+  // transitionHover,
 };
 
 const blog1 = {
   title: "Exploring Next.js: The Future of Server-Side Rendering",
   postedOn: "2024-09-01T10:30:00Z",
-  tags: [
-    { key: "Next.js" },
-    { key: "SSR" },
-    { key: "Performance" }
-  ],
+  tags: [{ key: "Next.js" }, { key: "SSR" }, { key: "Performance" }],
   description:
     "An in-depth analysis of Next.js and its advantages for server-side rendering, covering features, performance benefits, and practical use cases.",
   slug: "exploring-nextjs-ssr",
@@ -35,11 +41,7 @@ const blog1 = {
 const blog2 = {
   title: "10 CSS Tricks Every Developer Should Know",
   postedOn: "2024-07-21T09:15:00Z",
-  tags: [
-    { key: "CSS" },
-    { key: "Web Design" },
-    { key: "Frontend" }
-  ],
+  tags: [{ key: "CSS" }, { key: "Web Design" }, { key: "Frontend" }],
   description:
     "This post shares ten essential CSS tricks that can enhance the styling and responsiveness of your web applications.",
 };
@@ -47,11 +49,7 @@ const blog2 = {
 const blog3 = {
   title: "A Beginner’s Guide to TypeScript",
   postedOn: "2024-06-30T15:45:00Z",
-  tags: [
-    { key: "TypeScript" },
-    { key: "JavaScript" },
-    { key: "Programming" }
-  ],
+  tags: [{ key: "TypeScript" }, { key: "JavaScript" }, { key: "Programming" }],
   description:
     "Learn the basics of TypeScript, how it improves JavaScript development, and why you should consider using it in your next project.",
   thumbnail: "https://via.placeholder.com/200",
@@ -70,11 +68,7 @@ const blog4 = {
 const blog5 = {
   title: "How to Use Tailwind CSS for Rapid UI Development",
   postedOn: "2024-08-28T13:20:00Z",
-  tags: [
-    { key: "Tailwind CSS" },
-    { key: "CSS Framework" },
-    { key: "UI/UX" }
-  ],
+  tags: [{ key: "Tailwind CSS" }, { key: "CSS Framework" }, { key: "UI/UX" }],
   description:
     "This article covers the basics of Tailwind CSS, a utility-first CSS framework, and how it can speed up your UI development process.",
   thumbnail: "https://via.placeholder.com/200",

@@ -18,7 +18,7 @@ const dummyProps = {
   ],
   slug: "amazing-project",
   details: true,
-  // backgroundHover: "pink",
+  backgroundHover: "pink",
   // border,
   // boxShadow,
   // color,
@@ -48,6 +48,7 @@ const dummyProps1 = {
   src: "https://via.placeholder.com/400x200",
   slug: "eco-friendly-initiative",
   details: true,
+  backgroundHover: "lightgreen",
 };
 
 const dummyProps2 = {
@@ -63,6 +64,7 @@ const dummyProps2 = {
   src: "https://via.placeholder.com/400x200",
   slug: "tech-conference-2024",
   details: false,
+  backgroundHover: "orange",
 };
 
 const dummyProps3 = {
@@ -79,6 +81,7 @@ const dummyProps3 = {
   src: "https://via.placeholder.com/400x200",
   slug: "fitness-tracker-app",
   details: true,
+  backgroundHover: "lightblue",
 };
 
 const dummyProps4 = {
@@ -89,6 +92,7 @@ const dummyProps4 = {
     "This project explores the application of AI in creating personalized learning experiences, improving engagement, and optimizing curriculum delivery.",
   slug: "ai-in-education",
   details: false,
+  backgroundHover: "aqua",
 };
 
 const dummyProps5 = {
@@ -100,6 +104,7 @@ const dummyProps5 = {
   src: "https://via.placeholder.com/400x200",
   slug: "urban-farming-revolution",
   details: false,
+  backgroundHover: "lightcoral",
 };
 
 export default function Projects({

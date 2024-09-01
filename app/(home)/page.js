@@ -100,11 +100,8 @@ export default function Home() {
         backgroundWallpaper={
           'center / cover no-repeat url("https://beta.kumarsomesh.in/_next/image?url=https%3A%2F%2Flastfm.freetls.fastly.net%2Fi%2Fu%2F300x300%2Fb385713f95702a0425640da136618c60.jpg&w=640&q=75")'
         }
-        colorMain={"yellow"}
+        colorMain={"black"}
         heading={"Now"}
-        subheading={
-          "This is the subheading you've been wating for years, right?"
-        }
         backgroundImageName={
           "repeating-linear-gradient(45deg, #ff7e5f, #ff7e5f 10px, #feb47b 10px, #feb47b 20px)"
         }

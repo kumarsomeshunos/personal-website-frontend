@@ -13,7 +13,7 @@ const dummyData = {
     "This blog post provides a deep dive into React hooks, explaining how they work, why they're useful, and how to use them effectively in your React applications.",
   thumbnail: "https://via.placeholder.com/200", // Placeholder image URL
   slug: "understanding-react-hooks",
-  // backgroundHover: "pink",
+  backgroundHover: "pink",
   // border,
   // boxShadow,
   // color,
@@ -36,6 +36,7 @@ const blog1 = {
   description:
     "An in-depth analysis of Next.js and its advantages for server-side rendering, covering features, performance benefits, and practical use cases.",
   slug: "exploring-nextjs-ssr",
+  backgroundHover: "red",
 };
 
 const blog2 = {
@@ -44,6 +45,7 @@ const blog2 = {
   tags: [{ key: "CSS" }, { key: "Web Design" }, { key: "Frontend" }],
   description:
     "This post shares ten essential CSS tricks that can enhance the styling and responsiveness of your web applications.",
+    backgroundHover: "blue",
 };
 
 const blog3 = {
@@ -54,6 +56,7 @@ const blog3 = {
     "Learn the basics of TypeScript, how it improves JavaScript development, and why you should consider using it in your next project.",
   thumbnail: "https://via.placeholder.com/200",
   slug: "beginners-guide-typescript",
+  backgroundHover: "orange",
 };
 
 const blog4 = {
@@ -63,6 +66,7 @@ const blog4 = {
     "Discover how to design and build scalable microservices architecture using Node.js, including best practices and common pitfalls.",
   thumbnail: "https://via.placeholder.com/200",
   slug: "scalable-microservices-nodejs",
+  backgroundHover: "lightgreen",
 };
 
 const blog5 = {
@@ -73,6 +77,7 @@ const blog5 = {
     "This article covers the basics of Tailwind CSS, a utility-first CSS framework, and how it can speed up your UI development process.",
   thumbnail: "https://via.placeholder.com/200",
   slug: "tailwind-css-rapid-development",
+  backgroundHover: "magenta",
 };
 
 export default function Blogs({

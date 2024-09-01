@@ -31,3 +31,5 @@ Data integration from API's should be done in pages except if the componenet inc
 
 ## To-Do
  - Add fallback for Masonary Layout when JS is disabled.
+ - Create a separate component for Tags.
+ - Streamline fonts (size, weight etc.) -- M

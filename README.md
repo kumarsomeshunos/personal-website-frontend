@@ -33,3 +33,6 @@ Data integration from API's should be done in pages except if the componenet inc
  - Add fallback for Masonary Layout when JS is disabled.
  - Create a separate component for Tags.
  - Streamline fonts (size, weight etc.) -- M
+ - Update headings to use Ubuntu font.
+ - Fix all the images aspect ratio.
+ - Mobile view for Now and Footer.

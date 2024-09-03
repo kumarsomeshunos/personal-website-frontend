@@ -42,3 +42,10 @@
     margin-right: 2rem;
     list-style: none;
 }
+
+@media (max-width: 600px) {
+    .leftPortion {
+        display: none;
+        width: 0;
+    }
+}

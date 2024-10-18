@@ -11,6 +11,7 @@ export default function Now({
   heading,
   subheading,
   backgroundImageName,
+  posterImage
 }) {
   return (
     <section className={styles.main}>
@@ -26,7 +27,7 @@ export default function Now({
             subheading={subheading}
             backgroundImageName={backgroundImageName}
           />
-          <NowCard />
+          <NowCard posterImage={posterImage} />
         </section>
       </SectionWrapper>
     </section>

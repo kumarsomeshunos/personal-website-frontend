@@ -2,13 +2,13 @@ import MainButton from "../../Buttons/MainButton/MainButton";
 import styles from "./NowCard.module.css";
 import Image from "next/image";
 
-export default function NowCard() {
+export default function NowCard({posterImage}) {
   return (
     <article className={styles.main}>
       <div className={styles.wrapper}>
         <div className={styles.leftPortion}>
           <Image
-            src="https://i.scdn.co/image/ab67616100005174f6d51e6f5342d2d363220920"
+            src={posterImage}
             width={400}
             height={400}
             alt="Now Card Image"

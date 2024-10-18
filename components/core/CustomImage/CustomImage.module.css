@@ -1,0 +1,28 @@
+.imageText {
+    padding: 0.5rem 0 0 0;
+}
+
+.desktopImage {
+    display: block;
+  }
+  
+  .mobileImage {
+    display: none;
+  }
+
+  .desktopImage > img {
+    border-radius: 10px;
+  }
+  
+  .mobileImage > img {
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .desktopImage {
+      display: none;
+    }
+    .mobileImage {
+      display: block;
+    }
+  }

@@ -93,7 +93,7 @@ export default function ProjectCard({
               <MainButton
                 key={99}
                 text={"Read More"}
-                href={`project/${slug}`}
+                href={`projects/${slug}`}
                 padding={"0.1rem 0.3rem"}
                 paddingHover={"0.1rem 0.3rem"}
                 borderRadius={"0.25rem"}

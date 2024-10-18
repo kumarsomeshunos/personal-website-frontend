@@ -23,8 +23,8 @@ const navbarLinks = [
     value: "/blogs",
   },
   {
-    key: "Currently",
-    value: "/currently",
+    key: "Now",
+    value: "/now",
   },
   {
     key: "Contact",
@@ -108,6 +108,7 @@ export default function Home() {
           "repeating-linear-gradient(45deg, #ff7e5f, #ff7e5f 10px, #feb47b 10px, #feb47b 20px)"
         }
         filterWallpaper={"blur(2rem)"}
+        posterImage={"https://i.scdn.co/image/ab67616100005174f6d51e6f5342d2d363220920"}
       />
       <Footer />
       <End backgroundWallpaper={"black"} />

@@ -6,7 +6,7 @@ const ubuntu = Ubuntu({
   weight: ["300", "400", "500", "700"],
 });
 
-export default function Heading({ backgroundImageName, heading, subheading }) {
+export default function Heading({ backgroundImageName, heading, subheading, hr }) {
   return (
     (heading || subheading) && (
       <section className={styles.main}>
@@ -22,6 +22,7 @@ export default function Heading({ backgroundImageName, heading, subheading }) {
           </h1>
         )}
         {subheading && <p className={styles.subheading}>{subheading}</p>}
+        {hr && <hr />}
       </section>
     )
   );

@@ -4,6 +4,7 @@ import Heading from "@/components/core/Heading/Heading";
 import MasonryCardHolder from "@/components/core/Cards/MasonryCardHolder/MasonryCardHolder";
 import ProjectCard from "@/components/core/Cards/ProjectCard/ProjectCard";
 import MainButton from "@/components/core/Buttons/MainButton/MainButton";
+import FeaturedCard from "@/components/core/Cards/FeaturedCard/FeaturedCard";
 
 const dummyProps = {
   title: "Amazing Project",
@@ -101,7 +102,7 @@ const dummyProps5 = {
   status: "Ongoing",
   description:
     "An innovative project aimed at transforming unused urban spaces into productive farming areas, promoting local food production and reducing carbon footprint.",
-  src: "https://via.placeholder.com/400x200",
+  src: "https://beta.kumarsomesh.in/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fmiscellaneous%2FZvflQbVsGrYSwGdk_image.webp%3Fauto%3Dformat%2Ccompress&w=2048&q=75",
   slug: "urban-farming-revolution",
   details: false,
   backgroundHover: "lightcoral",
@@ -126,6 +127,11 @@ export default function Projects({
         filterWallpaper={filterWallpaper}
       >
         <section className={styles.wrapper}>
+        <Heading
+            heading={"Featured Project"}
+            backgroundImageName={backgroundImageName}
+          />
+        <FeaturedCard />
           <Heading
             heading={heading}
             subheading={subheading}

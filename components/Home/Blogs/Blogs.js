@@ -4,6 +4,7 @@ import Heading from "@/components/core/Heading/Heading";
 import MasonryCardHolder from "@/components/core/Cards/MasonryCardHolder/MasonryCardHolder";
 import BlogCard from "@/components/core/Cards/BlogCard/BlogCard";
 import MainButton from "@/components/core/Buttons/MainButton/MainButton";
+import FeaturedCard from "@/components/core/Cards/FeaturedCard/FeaturedCard";
 
 const dummyData = {
   title: "Understanding React Hooks: A Comprehensive Guide",
@@ -11,7 +12,7 @@ const dummyData = {
   tags: [{ key: "React" }, { key: "JavaScript" }, { key: "Web Development" }],
   description:
     "This blog post provides a deep dive into React hooks, explaining how they work, why they're useful, and how to use them effectively in your React applications.",
-  thumbnail: "https://via.placeholder.com/200", // Placeholder image URL
+  thumbnail: "https://beta.kumarsomesh.in/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fmiscellaneous%2FZvflQbVsGrYSwGdk_image.webp%3Fauto%3Dformat%2Ccompress&w=2048&q=75", // Placeholder image URL
   slug: "understanding-react-hooks",
   backgroundHover: "pink",
   // border,
@@ -98,6 +99,11 @@ export default function Blogs({
         filterWallpaper={filterWallpaper}
       >
         <section className={styles.wrapper}>
+        <Heading
+            heading={"Featured Blog"}
+            backgroundImageName={backgroundImageName}
+          />
+          <FeaturedCard />
           <Heading
             heading={heading}
             subheading={subheading}

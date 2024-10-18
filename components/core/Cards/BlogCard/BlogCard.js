@@ -79,7 +79,7 @@ export default function BlogCard({
         {slug && (
           <div className={styles.buttons}>
             <MainButton
-              href={`blog/${slug}`}
+              href={`blogs/${slug}`}
               text={"Read More"}
               padding={"0.3rem 0.3rem"}
               paddingHover={"0.3rem 0.3rem"}

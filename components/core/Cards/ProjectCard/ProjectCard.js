@@ -84,8 +84,8 @@ export default function ProjectCard({
                     borderRadiusHover={"0.25rem"}
                     margin={"0.5rem 0.5rem 0 0"}
                     marginHover={"0.5rem 0.5rem 0 0"}
-                    border={"none"}
-                    borderHover={"none"}
+                    border={"1px solid black"}
+              borderHover={"1px solid black"}
                   />
                 );
               })}
@@ -100,8 +100,8 @@ export default function ProjectCard({
                 borderRadiusHover={"0.25rem"}
                 margin={"0.5rem 0.5rem 0 0"}
                 marginHover={"0.5rem 0.5rem 0 0"}
-                border={"none"}
-                borderHover={"none"}
+                border={"1px solid black"}
+              borderHover={"1px solid black"}
               />
             )}
           </div>

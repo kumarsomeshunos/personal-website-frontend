@@ -45,28 +45,28 @@ export default function HeroContact({
                         <p>You can contact me at my email address: <a href="mailto:contact@example.com">contact@example.com</a> and my phone number: <a href="tel:+1234567890">+1234567890</a>. The username I use on most of the social media platforms is <a href="https://www.instagram.com/the.mr.x/">the.mr.x</a>. Below is the link of some of my social media profiles.</p>
                         <div className={styles.socialMediaLinks}>
                             <a href="https://www.instagram.com/the.mr.x/">
-                                <Image src="https://img.icons8.com/?size=512&id=Xy10Jcu1L2Su&format=png" alt="Instagram" width={96} height={96} />
+                                <Image src="https://img.icons8.com/?size=512&id=Xy10Jcu1L2Su&format=png" alt="Instagram" width={48} height={48} />
                             </a>
                             <a href="https://www.linkedin.com/in/the-mr-x/">
-                                <Image src="https://img.icons8.com/?size=512&id=xuvGCOXi8Wyg&format=png" alt="LinkedIn" width={96} height={96} />
+                                <Image src="https://img.icons8.com/?size=512&id=xuvGCOXi8Wyg&format=png" alt="LinkedIn" width={48} height={48} />
                             </a>
                             <a href="https://www.instagram.com/the.mr.x/">
-                                <Image src="https://img.icons8.com/?size=512&id=Xy10Jcu1L2Su&format=png" alt="Instagram" width={96} height={96} />
+                                <Image src="https://img.icons8.com/?size=512&id=Xy10Jcu1L2Su&format=png" alt="Instagram" width={48} height={48} />
                             </a>
                             <a href="https://www.linkedin.com/in/the-mr-x/">
-                                <Image src="https://img.icons8.com/?size=512&id=xuvGCOXi8Wyg&format=png" alt="LinkedIn" width={96} height={96} />
+                                <Image src="https://img.icons8.com/?size=512&id=xuvGCOXi8Wyg&format=png" alt="LinkedIn" width={48} height={48} />
                             </a>
                             <a href="https://www.instagram.com/the.mr.x/">
-                                <Image src="https://img.icons8.com/?size=512&id=Xy10Jcu1L2Su&format=png" alt="Instagram" width={96} height={96} />
+                                <Image src="https://img.icons8.com/?size=512&id=Xy10Jcu1L2Su&format=png" alt="Instagram" width={48} height={48} />
                             </a>
                             <a href="https://www.linkedin.com/in/the-mr-x/">
-                                <Image src="https://img.icons8.com/?size=512&id=xuvGCOXi8Wyg&format=png" alt="LinkedIn" width={96} height={96} />
+                                <Image src="https://img.icons8.com/?size=512&id=xuvGCOXi8Wyg&format=png" alt="LinkedIn" width={48} height={48} />
                             </a>
                             <a href="https://www.instagram.com/the.mr.x/">
-                                <Image src="https://img.icons8.com/?size=512&id=Xy10Jcu1L2Su&format=png" alt="Instagram" width={96} height={96} />
+                                <Image src="https://img.icons8.com/?size=512&id=Xy10Jcu1L2Su&format=png" alt="Instagram" width={48} height={48} />
                             </a>
                             <a href="https://www.linkedin.com/in/the-mr-x/">
-                                <Image src="https://img.icons8.com/?size=512&id=xuvGCOXi8Wyg&format=png" alt="LinkedIn" width={96} height={96} />
+                                <Image src="https://img.icons8.com/?size=512&id=xuvGCOXi8Wyg&format=png" alt="LinkedIn" width={48} height={48} />
                             </a>
                         </div>
                     </section>

@@ -10,25 +10,26 @@
 
   /* --default-backgroundWallpaper: repeating-linear-gradient(45deg, #ff7e5f, #ff7e5f 10px, #feb47b 10px, #feb47b 20px) center / cover no-repeat fixed; */
   /* url("https://images.unsplash.com/photo-1715273157640-b0c2a2bec178?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MTcxMTA4MTF8&ixlib=rb-4.0.3&q=85") center / cover no-repeat fixed; */
-  --default-filterWallpaper: blur(2rem);
+  --default-filterWallpaper: blur(0rem);
 
   /* Hero Component */
   --default-backgroundImageName: linear-gradient(90deg, rgba(34, 122, 255, 1) 0%, rgba(40, 201, 250, 1) 38%, rgba(14, 137, 219, 1) 75%);
 
   /* Main Button Component */
-  --defalut-backgroundButton: black;
-  --deafult-borderButton: 2px solid #1A9FEA;
+  /* --defalut-backgroundButton: black; */
+  /* --deafult-borderButton: 2px solid #1A9FEA; */
+  --deafult-borderButton: 2px solid black;
   --default-box-shadowButton: 0px 0px 0px 0px white;
-  --default-colorButton: white;
+  --default-colorButton: black;
   --default-paddingButton: 0.5rem 1rem;
   --default-marginButton: 1rem 1rem 0 0;
   --default-borderRadiusButton: 0;
   --default-textDecorationButton: none;
   --default-transitionButton: all 0.5s ease-in-out;
-  --defalut-backgroundButtonHover: #1A9FEA;
-  --deafult-borderButtonHover: 2px solid #1A9FEA;
+  --defalut-backgroundButtonHover: black;
+  --deafult-borderButtonHover: 2px solid black;
   --default-box-shadowButtonHover: none;
-  --default-colorButtonHover: black;
+  --default-colorButtonHover: white;
   --default-paddingButtonHover: 0.5rem 1rem;
   --default-marginButtonHover: 1rem 1rem 0 0;
   --default-borderRadiusButtonHover: 0;

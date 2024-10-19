@@ -1,3 +1,7 @@
+.main {
+    border-top: 1px solid black;
+}
+
 .wrapper {
     min-height: 18rem;
     height: auto;
@@ -43,9 +47,33 @@
     list-style: none;
 }
 
+@media (max-width: 1000px) {
+    .wrapper {
+        flex-wrap: wrap;
+    }
+
+    .rightPortion {
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    .leftPortion {
+        width: 100%;
+        margin: 0 0 0.5rem 0;
+        border-radius: 10px;
+    }
+}
+
 @media (max-width: 600px) {
     .leftPortion {
-        display: none;
-        width: 0;
+        flex-wrap: wrap;
+        margin: 0 0 0.5rem 0;
+
+    }
+
+    .leftPortion > img {
+        margin: 0 0 0 0;
+        width: 100%;
+        height: auto;
     }
 }

@@ -2,6 +2,7 @@ import HeroContact from "@/components/Contact/HeroContact/HeroContact";
 import styles from "./page.module.css";
 import Navbar from "@/components/core/Navbar/Navbar";
 import Footer from "@/components/core/Footer/Footer";
+import End from "@/components/core/Footer/End";
 
 const name = "Somesh Kumar";
 const version = "MK-VII";
@@ -46,10 +47,11 @@ backgroundWallpaper={"white"}
       <HeroContact 
       // backgroundMain={"linear-gradient(270deg, #000000 0%, #093e4c 50%, #1a1a1c 100%)"} 
       colorMain={"black"}
-      backgroundWallpaper={"white"}/>
-      <Footer 
-      colorMain={"black"}
-      backgroundWallpaper={"white"} />
+      backgroundWallpaper={"white"}
+      backgroundMain={"none"}
+      />
+      <Footer backgroundWallpaper={"white"} colorMain={"black"} />
+      <End backgroundWallpaper={"white"} colorMain={"black"} />
     </>
   );
 }

@@ -1,5 +1,7 @@
 import FeaturedCard from "@/components/core/Cards/FeaturedCard/FeaturedCard";
 import styles from "./page.module.css";
+import Footer from "@/components/core/Footer/Footer";
+import End from "@/components/core/Footer/End";
 import Navbar from "@/components/core/Navbar/Navbar";
 import Projects from "@/components/Home/Projects/Projects";
 
@@ -63,6 +65,8 @@ backgroundWallpaper={"white"}
         // backgroundMain={"green"}
         // filterWallpaper={"blur(50px)"}
       />
+      <Footer backgroundWallpaper={"white"} colorMain={"black"} />
+      <End backgroundWallpaper={"white"} colorMain={"black"} />
         </>
     );
 }

@@ -1,6 +1,8 @@
 import HeroProject from "@/components/Projects/HeroProject/HeroProject";
 import styles from "./page.module.css";
 import Navbar from "@/components/core/Navbar/Navbar";
+import Footer from "@/components/core/Footer/Footer";
+import End from "@/components/core/Footer/End";
 
 const name = "Somesh Kumar";
 const version = "MK-VII";
@@ -46,6 +48,8 @@ backgroundWallpaper={"white"}
       />
       <HeroProject colorMain={"black"}
 backgroundWallpaper={"white"} />
+<Footer backgroundWallpaper={"white"} colorMain={"black"} />
+<End backgroundWallpaper={"white"} colorMain={"black"} />
     </>
   );
 }

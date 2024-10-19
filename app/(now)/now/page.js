@@ -2,6 +2,7 @@ import Footer from "@/components/core/Footer/Footer";
 import styles from "./page.module.css";
 import Navbar from "@/components/core/Navbar/Navbar";
 import Now from "@/components/Home/Now/Now";
+import End from "@/components/core/Footer/End";
 
 const name = "Somesh Kumar";
 const version = "MK-VII";
@@ -84,6 +85,7 @@ export default function NowPage() {
         posterImage={"https://books.google.com/books/content?id=3SZsswEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"}
       />
       <Footer />
+      <End />
     </>
   );
 }

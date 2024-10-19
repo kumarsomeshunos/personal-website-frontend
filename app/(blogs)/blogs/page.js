@@ -1,6 +1,8 @@
 import styles from "./page.module.css";
 import Navbar from "@/components/core/Navbar/Navbar";
 import Blogs from "@/components/Home/Blogs/Blogs";
+import Footer from "@/components/core/Footer/Footer";
+import End from "@/components/core/Footer/End";
 
 const name = "Somesh Kumar";
 const version = "MK-VII";
@@ -62,6 +64,8 @@ backgroundWallpaper={"white"}
         // backgroundMain={"black"}
         // filterWallpaper={"blur(50px)"}
       />
+      <Footer backgroundWallpaper={"white"} colorMain={"black"} />
+      <End backgroundWallpaper={"white"} colorMain={"black"} />
     </>
   );
 }

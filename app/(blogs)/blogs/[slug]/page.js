@@ -1,6 +1,8 @@
 import HeroBlog from "@/components/Blogs/HeroBlog/HeroBlog";
 import styles from "./page.module.css";
 import Navbar from "@/components/core/Navbar/Navbar";
+import Footer from "@/components/core/Footer/Footer";
+import End from "@/components/core/Footer/End";
 
 const name = "Somesh Kumar";
 const version = "MK-VII";
@@ -46,6 +48,8 @@ backgroundWallpaper={"white"}
       />
         <HeroBlog thumbnail={"https://beta.kumarsomesh.in/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fmiscellaneous%2FZvflQbVsGrYSwGdk_image.webp%3Fauto%3Dformat%2Ccompress&w=2048&q=75"} tags={[{ key: "CSS" }, { key: "Web Design" }, { key: "Frontend" }]} postedOn={"2024-07-21T09:15:00Z"} colorMain={"black"}
 backgroundWallpaper={"white"} />
+<Footer backgroundWallpaper={"white"} colorMain={"black"} />
+<End backgroundWallpaper={"white"} colorMain={"black"} />
     </>
   );
 }

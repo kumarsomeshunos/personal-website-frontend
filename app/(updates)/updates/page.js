@@ -4,6 +4,8 @@ import Navbar from "@/components/core/Navbar/Navbar";
 import Projects from "@/components/Home/Projects/Projects";
 import UpdateCard from "@/components/core/Cards/UpdateCard/UpdateCard";
 import Updates from "@/components/Updates/Updates";
+import Footer from "@/components/core/Footer/Footer";
+import End from "@/components/core/Footer/End";
 
 const name = "Somesh Kumar";
 const version = "MK-VII";
@@ -50,6 +52,8 @@ backgroundWallpaper={"white"}
             backgroundWallpaper={"white"}
             // backgroundMain={"#000"} 
             />
+            <Footer backgroundWallpaper={"white"} colorMain={"black"} />
+            <End backgroundWallpaper={"white"} colorMain={"black"} />
         </>
     );
 }

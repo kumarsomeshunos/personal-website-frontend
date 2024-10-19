@@ -21,7 +21,7 @@ export default function Footer({
           <div className={styles.leftPortion}>
             <Image
               src={
-                "https://wallpapers.com/images/hd/minimalist-bible-2560-x-1600-zkcfmu5k1ps860y0.jpg"
+                "https://images.prismic.io/miscellaneous/ZxO8t4F3NbkBXvEw_footer.webp?auto=format,compress"
               }
               width={200}
               height={200}

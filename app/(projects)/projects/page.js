@@ -39,16 +39,18 @@ export default function ProjectsPage() {
         // backgroundWallpaper={
         //   "repeating-linear-gradient(45deg, #ff7e5f, #ff7e5f 10px, #feb47b 10px, #feb47b 20px) center / cover no-repeat fixed"
         // }
-        backgroundMain={"linear-gradient(270deg, #000000 0%, #093e4c 50%, #1a1a1c 100%)"}
+        // backgroundMain={"linear-gradient(270deg, #000000 0%, #093e4c 50%, #1a1a1c 100%)"}
         name={name}
         version={version}
         navbarLinks={navbarLinks}
+        colorMain={"black"}
+backgroundWallpaper={"white"}
       />
       <Projects
         // backgroundWallpaper={
         //   'lightblue url("https://images6.alphacoders.com/132/1323881.png") no-repeat fixed center'
         // }
-        colorMain={"white"}
+        // colorMain={"white"}
         heading={"Projects"}
         subheading={
           "This is the subheading you've been wating for years, right?"
@@ -56,6 +58,8 @@ export default function ProjectsPage() {
         backgroundImageName={
           "repeating-linear-gradient(45deg, #ff7e5f, #ff7e5f 10px, #feb47b 10px, #feb47b 20px)"
         }
+        colorMain={"black"}
+backgroundWallpaper={"white"}
         // backgroundMain={"green"}
         // filterWallpaper={"blur(50px)"}
       />

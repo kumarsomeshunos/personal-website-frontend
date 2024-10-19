@@ -53,56 +53,65 @@ export default function Home() {
   return (
     <>
       <Navbar
-        backgroundWallpaper={
-          "linear-gradient(270deg, #000000 0%, #093e4c 50%, #1a1a1c 100%)"
-        }
+        // backgroundWallpaper={
+        //   "linear-gradient(270deg, #000000 0%, #093e4c 50%, #1a1a1c 100%)"
+        // }
+        colorMain={"black"}
         name={name}
         version={version}
         navbarLinks={navbarLinks}
+        backgroundWallpaper={"white"}
       />
       <Hero
         introductionMD={introductionMD}
         displayProfile={displayProfile}
         heroButtons={heroButtons}
+        backgroundWallpaper={"white"}
+        // backgroundWallpaper={'url("https://images.prismic.io/miscellaneous/ZxOJH4F3NbkBXu-u_hero.png") no-repeat center center / cover'}
+        colorMain={"black"}
       />
       <Projects
         // backgroundWallpaper={
         //   'lightblue url("https://images6.alphacoders.com/132/1323881.png") no-repeat fixed center'
         // }
-        backgroundWallpaper={
-          'lightblue url("https://wallpapers.com/images/featured/pattern-4u7ed6koskqhcez1.jpg") no-repeat fixed center'
-        }
-        colorMain={"white"}
+        // backgroundWallpaper={
+        //   'lightblue url("https://wallpapers.com/images/featured/pattern-4u7ed6koskqhcez1.jpg") no-repeat fixed center'
+        // }
+        backgroundWallpaper={"white"}
+        // colorMain={"white"}
         heading={"Projects"}
         subheading={
           "This is the subheading you've been wating for years, right?"
         }
-        backgroundImageName={
-          "repeating-linear-gradient(45deg, #ff7e5f, #ff7e5f 10px, #feb47b 10px, #feb47b 20px)"
-        }
-        backgroundMain={"black"}
-        filterWallpaper={"blur(50px)"}
+        colorMain={"black"}
+        // backgroundImageName={
+        //   "repeating-linear-gradient(45deg, #ff7e5f, #ff7e5f 10px, #feb47b 10px, #feb47b 20px)"
+        // }
+        // backgroundMain={"black"}
+        // filterWallpaper={"blur(50px)"}
       />
       <Blogs
         // backgroundWallpaper={
         //   'lightblue url("https://wallpapers.com/images/featured/pattern-4u7ed6koskqhcez1.jpg") no-repeat fixed center'
         // }
-        colorMain={"white"}
+        // colorMain={"white"}
         heading={"Blogs"}
         subheading={
           "This is the subheading you've been wating for years, right?"
         }
-        backgroundImageName={
-          "repeating-linear-gradient(45deg, #ff7e5f, #ff7e5f 10px, #feb47b 10px, #feb47b 20px)"
-        }
+        // backgroundImageName={
+        //   "repeating-linear-gradient(45deg, #ff7e5f, #ff7e5f 10px, #feb47b 10px, #feb47b 20px)"
+        // }
         // backgroundMain={"black"}
         // filterWallpaper={"blur(50px)"}
+        backgroundWallpaper={"white"}
+        colorMain={"black"}
       />
       <Now
         backgroundWallpaper={
           'center / cover no-repeat url("https://beta.kumarsomesh.in/_next/image?url=https%3A%2F%2Flastfm.freetls.fastly.net%2Fi%2Fu%2F300x300%2Fb385713f95702a0425640da136618c60.jpg&w=640&q=75")'
         }
-        colorMain={"black"}
+        colorMain={"white"}
         heading={"Now Listening"}
         backgroundImageName={
           "repeating-linear-gradient(45deg, #ff7e5f, #ff7e5f 10px, #feb47b 10px, #feb47b 20px)"
@@ -110,8 +119,8 @@ export default function Home() {
         filterWallpaper={"blur(2rem)"}
         posterImage={"https://i.scdn.co/image/ab67616100005174f6d51e6f5342d2d363220920"}
       />
-      <Footer />
-      <End backgroundWallpaper={"black"} />
+      <Footer backgroundWallpaper={"white"} colorMain={"black"} />
+      <End backgroundWallpaper={"white"} colorMain={"black"} />
       {/* <Hero
         backgroundWallpaper={
           'lightblue url("https://images6.alphacoders.com/132/1323881.png") no-repeat fixed center'

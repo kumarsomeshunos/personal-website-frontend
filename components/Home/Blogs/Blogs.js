@@ -15,6 +15,8 @@ const dummyData = {
   thumbnail: "https://beta.kumarsomesh.in/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fmiscellaneous%2FZvflQbVsGrYSwGdk_image.webp%3Fauto%3Dformat%2Ccompress&w=2048&q=75", // Placeholder image URL
   slug: "understanding-react-hooks",
   backgroundHover: "pink",
+  border: "1px solid black",
+color: "black",
   // border,
   // boxShadow,
   // color,
@@ -38,6 +40,8 @@ const blog1 = {
     "An in-depth analysis of Next.js and its advantages for server-side rendering, covering features, performance benefits, and practical use cases.",
   slug: "exploring-nextjs-ssr",
   backgroundHover: "red",
+  border: "1px solid black",
+color: "black",
 };
 
 const blog2 = {
@@ -47,6 +51,8 @@ const blog2 = {
   description:
     "This post shares ten essential CSS tricks that can enhance the styling and responsiveness of your web applications.",
     backgroundHover: "blue",
+    border: "1px solid black",
+color: "black",
 };
 
 const blog3 = {
@@ -58,6 +64,8 @@ const blog3 = {
   thumbnail: "https://via.placeholder.com/200",
   slug: "beginners-guide-typescript",
   backgroundHover: "orange",
+  border: "1px solid black",
+color: "black",
 };
 
 const blog4 = {
@@ -68,6 +76,8 @@ const blog4 = {
   thumbnail: "https://via.placeholder.com/200",
   slug: "scalable-microservices-nodejs",
   backgroundHover: "lightgreen",
+  border: "1px solid black",
+color: "black",
 };
 
 const blog5 = {
@@ -79,6 +89,8 @@ const blog5 = {
   thumbnail: "https://via.placeholder.com/200",
   slug: "tailwind-css-rapid-development",
   backgroundHover: "magenta",
+  border: "1px solid black",
+color: "black",
 };
 
 export default function Blogs({
@@ -99,11 +111,11 @@ export default function Blogs({
         filterWallpaper={filterWallpaper}
       >
         <section className={styles.wrapper}>
-        <Heading
+        {/* <Heading
             heading={"Featured Blog"}
             backgroundImageName={backgroundImageName}
           />
-          <FeaturedCard />
+          <FeaturedCard /> */}
           <Heading
             heading={heading}
             subheading={subheading}

@@ -68,8 +68,10 @@
   --default-transitionBlogCardHover: all 0.5s ease-in-out;
 
   /* Anchor Tag */
-  --default-link-border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  --default-link-background-color: white;
+  /* --default-link-border-bottom: 1px solid rgba(255, 255, 255, 0.3); */
+  --default-link-border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  /* --default-link-background-color: white; */
+  --default-link-background-color: black;
 
   --grayed-text-color: #9C9C9C
 }

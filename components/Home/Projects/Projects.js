@@ -20,9 +20,9 @@ const dummyProps = {
   slug: "amazing-project",
   details: true,
   backgroundHover: "pink",
-  // border,
+  border: "1px solid black",
   // boxShadow,
-  // color,
+  color: "black",
   // borderRadius,
   // textDecoration,
   // transition,
@@ -50,6 +50,8 @@ const dummyProps1 = {
   slug: "eco-friendly-initiative",
   details: true,
   backgroundHover: "lightgreen",
+  border: "1px solid black",
+color: "black",
 };
 
 const dummyProps2 = {
@@ -66,6 +68,8 @@ const dummyProps2 = {
   slug: "tech-conference-2024",
   details: false,
   backgroundHover: "orange",
+  border: "1px solid black",
+color: "black",
 };
 
 const dummyProps3 = {
@@ -83,6 +87,8 @@ const dummyProps3 = {
   slug: "fitness-tracker-app",
   details: true,
   backgroundHover: "lightblue",
+  border: "1px solid black",
+color: "black",
 };
 
 const dummyProps4 = {
@@ -94,6 +100,8 @@ const dummyProps4 = {
   slug: "ai-in-education",
   details: false,
   backgroundHover: "aqua",
+  border: "1px solid black",
+color: "black",
 };
 
 const dummyProps5 = {
@@ -106,6 +114,8 @@ const dummyProps5 = {
   slug: "urban-farming-revolution",
   details: false,
   backgroundHover: "lightcoral",
+  border: "1px solid black",
+color: "black",
 };
 
 export default function Projects({
@@ -127,11 +137,11 @@ export default function Projects({
         filterWallpaper={filterWallpaper}
       >
         <section className={styles.wrapper}>
-        <Heading
+        {/* <Heading
             heading={"Featured Project"}
             backgroundImageName={backgroundImageName}
-          />
-        <FeaturedCard />
+          /> */}
+        {/* <FeaturedCard /> */}
           <Heading
             heading={heading}
             subheading={subheading}

@@ -35,14 +35,17 @@ export default function ProjectPage() {
   return (
     <>
       <Navbar
-        backgroundWallpaper={
-          "linear-gradient(270deg, #000000 0%, #093e4c 50%, #1a1a1c 100%)"
-        }
+        // backgroundWallpaper={
+        //   "linear-gradient(270deg, #000000 0%, #093e4c 50%, #1a1a1c 100%)"
+        // }
+        colorMain={"black"}
+backgroundWallpaper={"white"}
         name={name}
         version={version}
         navbarLinks={navbarLinks}
       />
-      <HeroProject />
+      <HeroProject colorMain={"black"}
+backgroundWallpaper={"white"} />
     </>
   );
 }

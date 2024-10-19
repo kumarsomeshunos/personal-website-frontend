@@ -98,12 +98,12 @@ export default function Updates({ backgroundMain,
                 backgroundWallpaper={backgroundWallpaper}
                 filterWallpaper={filterWallpaper}>
                 <Heading heading={"Updates"} subheading={"Check out my cool stuff – updates"} />
-                <UpdateCard updateDetailsHtml={updateDetailsHtml2} backgroundHover={"#404"} colorHover={"#fff"} />
-                <UpdateCard updateDetailsHtml={updateDetailsHtml2} backgroundHover={"#404"} colorHover={"#fff"} />
-                <UpdateCard updateDetailsHtml={updateDetailsHtml2} backgroundHover={"#404"} colorHover={"#fff"} />
-                <UpdateCard updateDetailsHtml={updateDetailsHtml2} backgroundHover={"#404"} colorHover={"#fff"} />
-                <UpdateCard updateDetailsHtml={updateDetailsHtml2} backgroundHover={"#404"} colorHover={"#fff"} />
-                <UpdateCard updateDetailsHtml={updateDetailsHtml} backgroundHover={"#540"} colorHover={"#fff"} />
+                <UpdateCard updateDetailsHtml={updateDetailsHtml2} backgroundHover={"#404"} colorHover={"#fff"} color={"black"} border={"1px solid black"} />
+                <UpdateCard updateDetailsHtml={updateDetailsHtml2} backgroundHover={"#404"} colorHover={"#fff"} color={"black"} border={"1px solid black"} />
+                <UpdateCard updateDetailsHtml={updateDetailsHtml2} backgroundHover={"#404"} colorHover={"#fff"} color={"black"} border={"1px solid black"} />
+                <UpdateCard updateDetailsHtml={updateDetailsHtml2} backgroundHover={"#404"} colorHover={"#fff"} color={"black"} border={"1px solid black"} />
+                <UpdateCard updateDetailsHtml={updateDetailsHtml2} backgroundHover={"#404"} colorHover={"#fff"} color={"black"} border={"1px solid black"} />
+                <UpdateCard updateDetailsHtml={updateDetailsHtml} backgroundHover={"#540"} colorHover={"#fff"} color={"black"} border={"1px solid black"} />
             </SectionWrapper>
         </section>
     );

@@ -38,12 +38,18 @@ export default function ProjectsPage() {
     return (
         <>
             <Navbar
-                backgroundMain={"#000"}
+                // backgroundMain={"#000"}
+                colorMain={"black"}
+backgroundWallpaper={"white"}
                 name={name}
                 version={version}
                 navbarLinks={navbarLinks}
             />
-            <Updates backgroundMain={"#000"} />
+            <Updates 
+            colorMain={"black"}
+            backgroundWallpaper={"white"}
+            // backgroundMain={"#000"} 
+            />
         </>
     );
 }

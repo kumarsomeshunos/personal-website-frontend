@@ -38,16 +38,20 @@ export default function BlogsPage() {
         // backgroundWallpaper={
         //   "repeating-linear-gradient(45deg, #ff7e5f, #ff7e5f 10px, #feb47b 10px, #feb47b 20px) center / cover no-repeat fixed"
         // }
-        backgroundMain={"linear-gradient(270deg, #000000 0%, #093e4c 50%, #1a1a1c 100%)"}
+        // backgroundMain={"linear-gradient(270deg, #000000 0%, #093e4c 50%, #1a1a1c 100%)"}
         name={name}
         version={version}
         navbarLinks={navbarLinks}
+        colorMain={"black"}
+backgroundWallpaper={"white"}
       />
       <Blogs
         // backgroundWallpaper={
         //   'lightblue url("https://wallpapers.com/images/featured/pattern-4u7ed6koskqhcez1.jpg") no-repeat fixed center'
         // }
-        colorMain={"yellow"}
+        // colorMain={"yellow"}
+        colorMain={"black"}
+backgroundWallpaper={"white"}
         heading={"Blogs"}
         subheading={
           "This is the subheading you've been wating for years, right?"

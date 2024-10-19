@@ -36,13 +36,20 @@ export default function Contact() {
   return (
     <>
     <Navbar
-        backgroundMain={"linear-gradient(270deg, #000000 0%, #093e4c 50%, #1a1a1c 100%)"}
+        // backgroundMain={"linear-gradient(270deg, #000000 0%, #093e4c 50%, #1a1a1c 100%)"}
         name={name}
         version={version}
         navbarLinks={navbarLinks}
+        colorMain={"black"}
+backgroundWallpaper={"white"}
       />
-      <HeroContact backgroundMain={"linear-gradient(270deg, #000000 0%, #093e4c 50%, #1a1a1c 100%)"} />
-      <Footer />
+      <HeroContact 
+      // backgroundMain={"linear-gradient(270deg, #000000 0%, #093e4c 50%, #1a1a1c 100%)"} 
+      colorMain={"black"}
+      backgroundWallpaper={"white"}/>
+      <Footer 
+      colorMain={"black"}
+      backgroundWallpaper={"white"} />
     </>
   );
 }

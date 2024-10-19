@@ -14,8 +14,11 @@ export default function NowCard({posterImage}) {
             alt="Now Card Image"
           />
           <div className={styles.songInfo}>
-            <h1 className={styles.title}>Close To You</h1>
+            <h1 className={styles.title}>Now Listening</h1>
             <hr />
+            <h2 className={styles.artistAndAlbum}>
+              Close To You
+            </h2>
             <h2 className={styles.artistAndAlbum}>
               Gracie Abrams &bull; The Secret of Us
             </h2>
@@ -47,6 +50,18 @@ export default function NowCard({posterImage}) {
           <p className={styles.mySpotify}>
             Well, you can checkout my playlist on <a href="/">Spotify</a>
           </p>
+          <MainButton
+          padding={"0.1rem 0.5rem"}
+          paddingHover={"0.1rem 0.5rem"}
+          background={"transparent"}
+backgroundHover={"black"}
+color={"black"}
+colorHover={"white"}
+border={"2px solid black"}
+borderHover={"2px solid white"}
+                      text={"Wanna see more?"}
+                      href={"/"}
+                    />
         </div>
       </div>
     </article>

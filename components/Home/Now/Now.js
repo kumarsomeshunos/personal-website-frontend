@@ -22,11 +22,11 @@ export default function Now({
         filterWallpaper={filterWallpaper}
       >
         <section className={styles.wrapper}>
-          <Heading
+          {/* <Heading
             heading={heading}
             subheading={subheading}
             backgroundImageName={backgroundImageName}
-          />
+          /> */}
           <NowCard posterImage={posterImage} />
         </section>
       </SectionWrapper>

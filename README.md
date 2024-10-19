@@ -46,3 +46,8 @@ Data integration from API's should be done in pages except if the componenet inc
  - Sanatize the HTML before passing.
  - Work on building a page banner component.
  - Work on the mobile view of Contact page.
+ - Add icons in Now section (for artists, albums and title)
+ - Right portion of the Now section should include the details about what's this (and link to deep dive)
+ - Updates page data should be fetched directly from GitHub.
+
+> Some tools I buit over the years in college (notes, pdf edit, handwritting, etc)

@@ -49,7 +49,7 @@ export default function NowPage() {
       />
       <Now
         backgroundWallpaper={
-          'center / cover no-repeat url("https://beta.kumarsomesh.in/_next/image?url=https%3A%2F%2Flastfm.freetls.fastly.net%2Fi%2Fu%2F300x300%2Fb385713f95702a0425640da136618c60.jpg&w=640&q=75")'
+          'center / cover no-repeat url("https://lastfm.freetls.fastly.net/i/u/500x500/1aaa3638ee0bfee0ba8089c78ad63b26.jpg")'
         }
         colorMain={"black"}
         heading={"Now Listening"}
@@ -57,7 +57,7 @@ export default function NowPage() {
           "repeating-linear-gradient(45deg, #ff7e5f, #ff7e5f 10px, #feb47b 10px, #feb47b 20px)"
         }
         filterWallpaper={"blur(2rem)"}
-        posterImage={"https://i.scdn.co/image/ab67616100005174f6d51e6f5342d2d363220920"}
+        posterImage={"https://lastfm.freetls.fastly.net/i/u/500x500/1aaa3638ee0bfee0ba8089c78ad63b26.jpg"}
       />
       <Now
         backgroundWallpaper={
@@ -73,7 +73,7 @@ export default function NowPage() {
       />
       <Now
         backgroundWallpaper={
-          'center / cover no-repeat url("https://marketplace.canva.com/EAFaQMYuZbo/1/0/1003w/canva-brown-rusty-mystery-novel-book-cover-hG1QhA7BiBU.jpg")'
+          'center / cover no-repeat url("https://books.google.com/books/content?id=3SZsswEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api")'
         }
         colorMain={"black"}
         heading={"Now Reading"}
@@ -81,7 +81,7 @@ export default function NowPage() {
           "repeating-linear-gradient(45deg, #ff7e5f, #ff7e5f 10px, #feb47b 10px, #feb47b 20px)"
         }
         filterWallpaper={"blur(2rem)"}
-        posterImage={"https://marketplace.canva.com/EAFaQMYuZbo/1/0/1003w/canva-brown-rusty-mystery-novel-book-cover-hG1QhA7BiBU.jpg"}
+        posterImage={"https://books.google.com/books/content?id=3SZsswEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"}
       />
       <Footer />
     </>

@@ -3,53 +3,42 @@ import styles from "./page.module.css";
 import Navbar from "@/components/core/Navbar/Navbar";
 import Footer from "@/components/core/Footer/Footer";
 import End from "@/components/core/Footer/End";
-
-const name = "Somesh Kumar";
-const version = "MK-VII";
-const navbarLinks = [
-  {
-    key: "Home",
-    value: "/",
-  },
-  {
-    key: "Projects",
-    value: "/projects",
-  },
-  {
-    key: "Blogs",
-    value: "/blogs",
-  },
-  {
-    key: "Now",
-    value: "/now",
-  },
-  {
-    key: "Contact",
-    value: "/contact",
-  },
-  {
-    key: "Updates",
-    value: "/updates",
-  },
-];
+import { navbarData, footerData } from "@/data";
 
 export default function BlogPage() {
   return (
     <>
       <Navbar
-        // backgroundWallpaper={
-        //   "linear-gradient(270deg, #000000 0%, #093e4c 50%, #1a1a1c 100%)"
-        // }
-        colorMain={"black"}
-backgroundWallpaper={"white"}
-        name={name}
-        version={version}
-        navbarLinks={navbarLinks}
+        backgroundMain={navbarData.backgroundMain}
+        colorMain={navbarData.colorMain}
+        backgroundWallpaper={navbarData.backgroundWallpaper}
+        filterWallpaper={navbarData.filterWallpaper}
+        name={navbarData.name}
+        version={navbarData.version}
+        navbarLinks={navbarData.navbarLinks}
       />
-        <HeroBlog thumbnail={"https://beta.kumarsomesh.in/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fmiscellaneous%2FZvflQbVsGrYSwGdk_image.webp%3Fauto%3Dformat%2Ccompress&w=2048&q=75"} tags={[{ key: "CSS" }, { key: "Web Design" }, { key: "Frontend" }]} postedOn={"2024-07-21T09:15:00Z"} colorMain={"black"}
-backgroundWallpaper={"white"} />
-<Footer backgroundWallpaper={"white"} colorMain={"black"} />
-<End backgroundWallpaper={"white"} colorMain={"black"} />
+      <HeroBlog
+        thumbnail={
+          "https://beta.kumarsomesh.in/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fmiscellaneous%2FZvflQbVsGrYSwGdk_image.webp%3Fauto%3Dformat%2Ccompress&w=2048&q=75"
+        }
+        tags={[{ key: "CSS" }, { key: "Web Design" }, { key: "Frontend" }]}
+        postedOn={"2024-07-21T09:15:00Z"}
+        colorMain={"black"}
+        backgroundWallpaper={"white"}
+      />
+      <Footer
+        backgroundMain={footerData.backgroundMain}
+        colorMain={footerData.colorMain}
+        backgroundWallpaper={footerData.backgroundWallpaper}
+        filterWallpaper={footerData.filterWallpaper}
+        footerImageSrc={footerData.footerImageSrc}
+        footerImageAlt={footerData.footerImageAlt}
+        footerImageWidth={footerData.footerImageWidth}
+        footerImageHeight={footerData.footerImageHeight}
+        footerLinksTitle={footerData.footerLinksTitle}
+        footerLinks={footerData.footerLinks}
+      />
+      <End backgroundWallpaper={"white"} colorMain={"black"} />
     </>
   );
 }

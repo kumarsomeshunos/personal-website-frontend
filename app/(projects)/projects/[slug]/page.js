@@ -3,53 +3,34 @@ import styles from "./page.module.css";
 import Navbar from "@/components/core/Navbar/Navbar";
 import Footer from "@/components/core/Footer/Footer";
 import End from "@/components/core/Footer/End";
-
-const name = "Somesh Kumar";
-const version = "MK-VII";
-const navbarLinks = [
-  {
-    key: "Home",
-    value: "/",
-  },
-  {
-    key: "Projects",
-    value: "/projects",
-  },
-  {
-    key: "Blogs",
-    value: "/blogs",
-  },
-  {
-    key: "Now",
-    value: "/now",
-  },
-  {
-    key: "Contact",
-    value: "/contact",
-  },
-  {
-    key: "Updates",
-    value: "/updates",
-  },
-];
+import { navbarData, footerData } from "@/data";
 
 export default function ProjectPage() {
   return (
     <>
       <Navbar
-        // backgroundWallpaper={
-        //   "linear-gradient(270deg, #000000 0%, #093e4c 50%, #1a1a1c 100%)"
-        // }
-        colorMain={"black"}
-backgroundWallpaper={"white"}
-        name={name}
-        version={version}
-        navbarLinks={navbarLinks}
+        backgroundMain={navbarData.backgroundMain}
+        colorMain={navbarData.colorMain}
+        backgroundWallpaper={navbarData.backgroundWallpaper}
+        filterWallpaper={navbarData.filterWallpaper}
+        name={navbarData.name}
+        version={navbarData.version}
+        navbarLinks={navbarData.navbarLinks}
       />
-      <HeroProject colorMain={"black"}
-backgroundWallpaper={"white"} />
-<Footer backgroundWallpaper={"white"} colorMain={"black"} />
-<End backgroundWallpaper={"white"} colorMain={"black"} />
+      <HeroProject colorMain={"black"} backgroundWallpaper={"white"} />
+      <Footer
+        backgroundMain={footerData.backgroundMain}
+        colorMain={footerData.colorMain}
+        backgroundWallpaper={footerData.backgroundWallpaper}
+        filterWallpaper={footerData.filterWallpaper}
+        footerImageSrc={footerData.footerImageSrc}
+        footerImageAlt={footerData.footerImageAlt}
+        footerImageWidth={footerData.footerImageWidth}
+        footerImageHeight={footerData.footerImageHeight}
+        footerLinksTitle={footerData.footerLinksTitle}
+        footerLinks={footerData.footerLinks}
+      />
+      <End backgroundWallpaper={"white"} colorMain={"black"} />
     </>
   );
 }

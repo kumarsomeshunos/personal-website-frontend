@@ -59,8 +59,8 @@ export default function BlogCard({
         {title && <hr />}
         {postedOn && (
           <div className={styles.divTime}>
-            <time className={styles.time} dateTime={postedOn.substring(0, 10)}>
-              {postedOn.substring(0, 10)}
+            <time className={styles.time} dateTime={postedOn}>
+              {postedOn}
             </time>
           </div>
         )}

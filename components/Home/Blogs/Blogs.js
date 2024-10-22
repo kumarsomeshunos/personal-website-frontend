@@ -4,103 +4,16 @@ import Heading from "@/components/core/Heading/Heading";
 import MasonryCardHolder from "@/components/core/Cards/MasonryCardHolder/MasonryCardHolder";
 import BlogCard from "@/components/core/Cards/BlogCard/BlogCard";
 import MainButton from "@/components/core/Buttons/MainButton/MainButton";
-import FeaturedCard from "@/components/core/Cards/FeaturedCard/FeaturedCard";
-
-const dummyData = {
-  title: "Understanding React Hooks: A Comprehensive Guide",
-  postedOn: "2024-08-15T12:00:00Z",
-  tags: [{ key: "React" }, { key: "JavaScript" }, { key: "Web Development" }],
-  description:
-    "This blog post provides a deep dive into React hooks, explaining how they work, why they're useful, and how to use them effectively in your React applications.",
-  thumbnail: "https://beta.kumarsomesh.in/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fmiscellaneous%2FZvflQbVsGrYSwGdk_image.webp%3Fauto%3Dformat%2Ccompress&w=2048&q=75", // Placeholder image URL
-  slug: "understanding-react-hooks",
-  backgroundHover: "pink",
-  border: "1px solid black",
-color: "black",
-  // border,
-  // boxShadow,
-  // color,
-  // borderRadius,
-  // textDecoration,
-  // transition,
-  // backgroundHover,
-  // borderHover,
-  // boxShadowHover,
-  // colorHover,
-  // borderRadiusHover,
-  // textDecorationHover,
-  // transitionHover,
-};
-
-const blog1 = {
-  title: "Exploring Next.js: The Future of Server-Side Rendering",
-  postedOn: "2024-09-01T10:30:00Z",
-  tags: [{ key: "Next.js" }, { key: "SSR" }, { key: "Performance" }],
-  description:
-    "An in-depth analysis of Next.js and its advantages for server-side rendering, covering features, performance benefits, and practical use cases.",
-  slug: "exploring-nextjs-ssr",
-  backgroundHover: "red",
-  border: "1px solid black",
-color: "black",
-};
-
-const blog2 = {
-  title: "10 CSS Tricks Every Developer Should Know",
-  postedOn: "2024-07-21T09:15:00Z",
-  tags: [{ key: "CSS" }, { key: "Web Design" }, { key: "Frontend" }],
-  description:
-    "This post shares ten essential CSS tricks that can enhance the styling and responsiveness of your web applications.",
-    backgroundHover: "blue",
-    border: "1px solid black",
-color: "black",
-};
-
-const blog3 = {
-  title: "A Beginner’s Guide to TypeScript",
-  postedOn: "2024-06-30T15:45:00Z",
-  tags: [{ key: "TypeScript" }, { key: "JavaScript" }, { key: "Programming" }],
-  description:
-    "Learn the basics of TypeScript, how it improves JavaScript development, and why you should consider using it in your next project.",
-  thumbnail: "https://via.placeholder.com/200",
-  slug: "beginners-guide-typescript",
-  backgroundHover: "orange",
-  border: "1px solid black",
-color: "black",
-};
-
-const blog4 = {
-  title: "Building Scalable Microservices with Node.js",
-  postedOn: "2024-08-05T08:00:00Z",
-  description:
-    "Discover how to design and build scalable microservices architecture using Node.js, including best practices and common pitfalls.",
-  thumbnail: "https://via.placeholder.com/200",
-  slug: "scalable-microservices-nodejs",
-  backgroundHover: "lightgreen",
-  border: "1px solid black",
-color: "black",
-};
-
-const blog5 = {
-  title: "How to Use Tailwind CSS for Rapid UI Development",
-  postedOn: "2024-08-28T13:20:00Z",
-  tags: [{ key: "Tailwind CSS" }, { key: "CSS Framework" }, { key: "UI/UX" }],
-  description:
-    "This article covers the basics of Tailwind CSS, a utility-first CSS framework, and how it can speed up your UI development process.",
-  thumbnail: "https://via.placeholder.com/200",
-  slug: "tailwind-css-rapid-development",
-  backgroundHover: "magenta",
-  border: "1px solid black",
-color: "black",
-};
 
 export default function Blogs({
   backgroundMain,
   colorMain,
   backgroundWallpaper,
   filterWallpaper,
-  heading,
+  heading = "Blogs",
   subheading,
-  backgroundImageName,
+  backgroundImageName = "var(--default-backgroundImageName)",
+  blogs,
 }) {
   return (
     <section className={styles.main}>
@@ -111,11 +24,6 @@ export default function Blogs({
         filterWallpaper={filterWallpaper}
       >
         <section className={styles.wrapper}>
-        {/* <Heading
-            heading={"Featured Blog"}
-            backgroundImageName={backgroundImageName}
-          />
-          <FeaturedCard /> */}
           <Heading
             heading={heading}
             subheading={subheading}
@@ -128,12 +36,9 @@ export default function Blogs({
               1000: 1,
             }}
           >
-            <BlogCard {...dummyData} />
-            <BlogCard {...blog1} />
-            <BlogCard {...blog2} />
-            <BlogCard {...blog3} />
-            <BlogCard {...blog4} />
-            <BlogCard {...blog5} />
+            {blogs.map((blog, index) => {
+              return <BlogCard key={index} {...blog} />;
+            })}
           </MasonryCardHolder>
           <div className={styles.buttons}>
             <MainButton text={"All Projects"} href={"/projects"} />

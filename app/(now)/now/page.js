@@ -3,89 +3,69 @@ import styles from "./page.module.css";
 import Navbar from "@/components/core/Navbar/Navbar";
 import Now from "@/components/Home/Now/Now";
 import End from "@/components/core/Footer/End";
-
-const name = "Somesh Kumar";
-const version = "MK-VII";
-const navbarLinks = [
-  {
-    key: "Home",
-    value: "/",
-  },
-  {
-    key: "Projects",
-    value: "/projects",
-  },
-  {
-    key: "Blogs",
-    value: "/blogs",
-  },
-  {
-    key: "Now",
-    value: "/now",
-  },
-  {
-    key: "F.I.R.S.T",
-    value: "/first",
-  },
-  {
-    key: "Contact",
-    value: "/contact",
-  },
-  {
-    key: "Updates",
-    value: "/updates",
-  },
-];
+import {
+  navbarData,
+  nowSectionData,
+  footerData,
+  nowMovieData,
+  nowBookData,
+} from "@/data";
 
 export default function NowPage() {
   return (
     <>
       <Navbar
-        backgroundWallpaper={
-          "linear-gradient(270deg, #000000 0%, #093e4c 50%, #1a1a1c 100%)"
-        }
-        name={name}
-        version={version}
-        navbarLinks={navbarLinks}
+        backgroundMain={navbarData.backgroundMain}
+        colorMain={navbarData.colorMain}
+        backgroundWallpaper={navbarData.backgroundWallpaper}
+        filterWallpaper={navbarData.filterWallpaper}
+        name={navbarData.name}
+        version={navbarData.version}
+        navbarLinks={navbarData.navbarLinks}
       />
       <Now
-        backgroundWallpaper={
-          'center / cover no-repeat url("https://lastfm.freetls.fastly.net/i/u/500x500/1aaa3638ee0bfee0ba8089c78ad63b26.jpg")'
-        }
-        colorMain={"black"}
-        heading={"Now Listening"}
-        backgroundImageName={
-          "repeating-linear-gradient(45deg, #ff7e5f, #ff7e5f 10px, #feb47b 10px, #feb47b 20px)"
-        }
-        filterWallpaper={"blur(2rem)"}
-        posterImage={"https://lastfm.freetls.fastly.net/i/u/500x500/1aaa3638ee0bfee0ba8089c78ad63b26.jpg"}
+        backgroundMain={nowSectionData.backgroundMain}
+        colorMain={nowSectionData.colorMain}
+        backgroundWallpaper={nowSectionData.backgroundWallpaper}
+        filterWallpaper={nowSectionData.filterWallpaper}
+        heading={nowSectionData.heading}
+        subheading={nowSectionData.subheading}
+        backgroundImageName={nowSectionData.backgroundImageName}
+        now={nowSectionData.now}
       />
       <Now
-        backgroundWallpaper={
-          'center / cover no-repeat url("https://rukminim2.flixcart.com/image/850/1000/k5wse4w0/poster/u/b/a/medium-artistic-movie-poster-thor-marvel-movie-poster-for-room-original-imafzgvb2xt8ptzx.jpeg?q=90&crop=false")'
-        }
-        colorMain={"black"}
-        heading={"Now Watching"}
-        backgroundImageName={
-          "repeating-linear-gradient(45deg, #ff7e5f, #ff7e5f 10px, #feb47b 10px, #feb47b 20px)"
-        }
-        filterWallpaper={"blur(2rem)"}
-        posterImage={"https://rukminim2.flixcart.com/image/850/1000/k5wse4w0/poster/u/b/a/medium-artistic-movie-poster-thor-marvel-movie-poster-for-room-original-imafzgvb2xt8ptzx.jpeg?q=90&crop=false"}
+        backgroundMain={nowMovieData.backgroundMain}
+        colorMain={nowMovieData.colorMain}
+        backgroundWallpaper={nowMovieData.backgroundWallpaper}
+        filterWallpaper={nowMovieData.filterWallpaper}
+        heading={nowMovieData.heading}
+        subheading={nowMovieData.subheading}
+        backgroundImageName={nowMovieData.backgroundImageName}
+        now={nowMovieData.now}
       />
       <Now
-        backgroundWallpaper={
-          'center / cover no-repeat url("https://books.google.com/books/content?id=3SZsswEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api")'
-        }
-        colorMain={"black"}
-        heading={"Now Reading"}
-        backgroundImageName={
-          "repeating-linear-gradient(45deg, #ff7e5f, #ff7e5f 10px, #feb47b 10px, #feb47b 20px)"
-        }
-        filterWallpaper={"blur(2rem)"}
-        posterImage={"https://books.google.com/books/content?id=3SZsswEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"}
+        backgroundMain={nowBookData.backgroundMain}
+        colorMain={nowBookData.colorMain}
+        backgroundWallpaper={nowBookData.backgroundWallpaper}
+        filterWallpaper={nowBookData.filterWallpaper}
+        heading={nowBookData.heading}
+        subheading={nowBookData.subheading}
+        backgroundImageName={nowBookData.backgroundImageName}
+        now={nowBookData.now}
       />
-      <Footer />
-      <End />
+      <Footer
+        backgroundMain={footerData.backgroundMain}
+        colorMain={footerData.colorMain}
+        backgroundWallpaper={footerData.backgroundWallpaper}
+        filterWallpaper={footerData.filterWallpaper}
+        footerImageSrc={footerData.footerImageSrc}
+        footerImageAlt={footerData.footerImageAlt}
+        footerImageWidth={footerData.footerImageWidth}
+        footerImageHeight={footerData.footerImageHeight}
+        footerLinksTitle={footerData.footerLinksTitle}
+        footerLinks={footerData.footerLinks}
+      />
+      <End backgroundWallpaper={"white"} colorMain={"black"} />
     </>
   );
 }

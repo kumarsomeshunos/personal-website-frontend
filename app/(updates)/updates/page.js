@@ -1,59 +1,40 @@
-import FeaturedCard from "@/components/core/Cards/FeaturedCard/FeaturedCard";
 import styles from "./page.module.css";
 import Navbar from "@/components/core/Navbar/Navbar";
-import Projects from "@/components/Home/Projects/Projects";
-import UpdateCard from "@/components/core/Cards/UpdateCard/UpdateCard";
 import Updates from "@/components/Updates/Updates";
 import Footer from "@/components/core/Footer/Footer";
 import End from "@/components/core/Footer/End";
-
-const name = "Somesh Kumar";
-const version = "MK-VII";
-const navbarLinks = [
-    {
-        key: "Home",
-        value: "/",
-    },
-    {
-        key: "Projects",
-        value: "/projects",
-    },
-    {
-        key: "Blogs",
-        value: "/blogs",
-    },
-    {
-        key: "Now",
-        value: "/now",
-    },
-    {
-        key: "Contact",
-        value: "/contact",
-    },
-    {
-        key: "Updates",
-        value: "/updates",
-    },
-];
+import { navbarData, footerData } from "@/data";
 
 export default function ProjectsPage() {
-    return (
-        <>
-            <Navbar
-                // backgroundMain={"#000"}
-                colorMain={"black"}
-backgroundWallpaper={"white"}
-                name={name}
-                version={version}
-                navbarLinks={navbarLinks}
-            />
-            <Updates 
-            colorMain={"black"}
-            backgroundWallpaper={"white"}
-            // backgroundMain={"#000"} 
-            />
-            <Footer backgroundWallpaper={"white"} colorMain={"black"} />
-            <End backgroundWallpaper={"white"} colorMain={"black"} />
-        </>
-    );
+  return (
+    <>
+      <Navbar
+        backgroundMain={navbarData.backgroundMain}
+        colorMain={navbarData.colorMain}
+        backgroundWallpaper={navbarData.backgroundWallpaper}
+        filterWallpaper={navbarData.filterWallpaper}
+        name={navbarData.name}
+        version={navbarData.version}
+        navbarLinks={navbarData.navbarLinks}
+      />
+      <Updates
+        colorMain={"black"}
+        backgroundWallpaper={"white"}
+        // backgroundMain={"#000"}
+      />
+      <Footer
+        backgroundMain={footerData.backgroundMain}
+        colorMain={footerData.colorMain}
+        backgroundWallpaper={footerData.backgroundWallpaper}
+        filterWallpaper={footerData.filterWallpaper}
+        footerImageSrc={footerData.footerImageSrc}
+        footerImageAlt={footerData.footerImageAlt}
+        footerImageWidth={footerData.footerImageWidth}
+        footerImageHeight={footerData.footerImageHeight}
+        footerLinksTitle={footerData.footerLinksTitle}
+        footerLinks={footerData.footerLinks}
+      />
+      <End backgroundWallpaper={"white"} colorMain={"black"} />
+    </>
+  );
 }

@@ -15,13 +15,13 @@ export default function Hero({
   colorMain,
   backgroundWallpaper,
   filterWallpaper,
-  greetings,
-  name,
-  backgroundImageName,
+  greetings = "Hello, I'm",
+  name = "Somesh Kumar",
+  backgroundImageName = "var(--default-backgroundImageName)",
   introductionMD,
   heroButtons,
   displayProfile,
-  displayProfileAlt,
+  displayProfileAlt = "Display Profile Image",
 }) {
   return (
     <header className={styles.main}>
@@ -33,15 +33,14 @@ export default function Hero({
       >
         <section className={styles.wrapper}>
           <section className={styles.leftPortion}>
-            <p className={styles.greetings}>{greetings || "Hello, I'm"}</p>
+            <p className={styles.greetings}>{greetings}</p>
             <h1
               className={`${styles.name} ${ubuntu.className}`}
               style={{
-                backgroundImage:
-                  backgroundImageName || "var(--default-backgroundImageName)",
+                backgroundImage: backgroundImageName,
               }}
             >
-              {name || "Somesh Kumar"}
+              {name}
             </h1>
             {introductionMD && <InsertHtml externalHtml={introductionMD} />}
             {heroButtons && (
@@ -63,8 +62,8 @@ export default function Hero({
               <Image
                 src={displayProfile}
                 width={800}
-                height={800}
-                alt={displayProfileAlt || "Display Profile Image"}
+                height={1200}
+                alt={displayProfileAlt}
                 className={styles.displayProfile}
               />
             )}

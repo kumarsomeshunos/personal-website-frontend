@@ -2,27 +2,29 @@ import styles from "./GlobalWrapper.module.css";
 
 export default function GlobalWrapper({
   children,
-  backgroundMain,
-  colorMain,
-  backgroundWallpaper,
-  filterWallpaper,
+  backgroundMain = "var(--default-backgroundMain)",
+  colorMain = "var(--default-colorMain)",
+  backgroundWallpaper = "var(--default-backgroundWallpaper)",
+  filterWallpaper = "var(--default-filterWallpaper)",
+  linkBorderBottom = "var(--default-link-border-bottom)",
+  linkBackgroundColor = "var(--default-link-background-color)",
 }) {
   return (
     <section
       className={styles.main}
       style={{
-        background: backgroundMain || "var(--default-backgroundMain)",
-        color: colorMain || "var(--default-colorMain)",
+        background: backgroundMain,
+        color: colorMain,
       }}
     >
       <style
         dangerouslySetInnerHTML={{
           __html: `
             a {
-              border-bottom: ${"var(--default-link-border-bottom)"};
+              border-bottom: ${linkBorderBottom};
             }
             a::after {
-              background-color: ${"var(--default-link-background-color)"};
+              background-color: ${linkBackgroundColor};
             }
           `,
         }}
@@ -30,9 +32,8 @@ export default function GlobalWrapper({
       <div
         className={styles.wallpaper}
         style={{
-          background:
-            backgroundWallpaper || "var(--default-backgroundWallpaper)",
-          filter: filterWallpaper || "var(--default-filterWallpaper)",
+          background: backgroundWallpaper,
+          filter: filterWallpaper,
         }}
       ></div>
       <div className={styles.container}>{children}</div>

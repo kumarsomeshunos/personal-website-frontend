@@ -1,38 +1,65 @@
-import Image from "next/image";
 import styles from "./FeaturedCard.module.css";
 import MainButton from "../../Buttons/MainButton/MainButton";
 import CustomImage from "../../CustomImage/CustomImage";
 
-export default function FeaturedCard() {
+export default function FeaturedCard({
+  imageSrc,
+  imageSrcMobile,
+  imageAlt,
+  imageWidth,
+  imageHeight,
+  layoutImage,
+  objectFitImage,
+  paddingSection,
+  positionDiv,
+  widthDiv,
+  heightDiv,
+  borderRadiusDiv,
+  overflowDiv,
+  boxShadowDiv,
+  hrefLink,
+  textLink,
+  textParagraph,
+  title,
+  buttons,
+}) {
   return (
     <article className={styles.main}>
       <div className={styles.wrapper}>
         <CustomImage
-          srcImage={
-            "https://beta.kumarsomesh.in/_next/image?url=https%3A%2F%2Fimages.prismic.io%2Fmiscellaneous%2FZvflQbVsGrYSwGdk_image.webp%3Fauto%3Dformat%2Ccompress&w=2048&q=75"
-          }
-          srcMobile={
-            "https://www.ineedamobile.com/wp-content/uploads/2019/03/iphone-x-600x598.png"
-          }
-          altImage={"temp image"}
-          widthImage={1000}
-          heightImage={400}
+          srcImage={imageSrc}
+          srcMobile={imageSrcMobile}
+          altImage={imageAlt}
+          widthImage={imageWidth}
+          heightImage={imageHeight}
+          layoutImage={layoutImage}
+          objectFitImage={objectFitImage}
+          paddingSection={paddingSection}
+          positionDiv={positionDiv}
+          widthDiv={widthDiv}
+          heightDiv={heightDiv}
+          borderRadiusDiv={borderRadiusDiv}
+          overflowDiv={overflowDiv}
+          boxShadowDiv={boxShadowDiv}
+          hrefLink={hrefLink}
+          textLink={textLink}
+          textParagraph={textParagraph}
         />
+
         <div className={styles.info}>
-          <h2 className={styles.title}>Project - Smile</h2>
+          <h2 className={styles.title}>{title}</h2>
           <div className={styles.buttons}>
-            <MainButton
-              href={"/"}
-              text={"Details"}
-              margin={"0.25rem 0.5rem 0 0"}
-              marginHover={"0.25rem 0.5rem 0 0"}
-            />
-            <MainButton
-              href={"/"}
-              text={"Watch Video"}
-              margin={"0.25rem 0 0 0.5rem"}
-              marginHover={"0.25rem 0 0 0.5rem"}
-            />
+            {buttons.map((button, index) => {
+              return (
+                <MainButton
+                  key={index}
+                  href={button.value}
+                  text={button.key}
+                  margin={"1rem 0.5rem 0 0"}
+                  marginHover={"1rem 0.5rem 0 0"}
+                />
+              );
+            })}
           </div>
         </div>
       </div>

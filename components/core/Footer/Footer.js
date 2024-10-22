@@ -8,6 +8,12 @@ export default function Footer({
   colorMain,
   backgroundWallpaper,
   filterWallpaper,
+  footerImageSrc,
+  footerImageAlt,
+  footerImageWidth,
+  footerImageHeight,
+  footerLinksTitle,
+  footerLinks,
 }) {
   return (
     <footer className={styles.main}>
@@ -20,50 +26,22 @@ export default function Footer({
         <section className={styles.wrapper}>
           <div className={styles.leftPortion}>
             <Image
-              src={
-                "https://images.prismic.io/miscellaneous/ZxO8t4F3NbkBXvEw_footer.webp?auto=format,compress"
-              }
-              width={200}
-              height={200}
-              alt="walli"
+              src={footerImageSrc}
+              width={footerImageWidth}
+              height={footerImageHeight}
+              alt={footerImageAlt}
             />
           </div>
           <div className={styles.rightPortion}>
-            <h2 className={styles.linkHeading}>Other Links</h2>
+            <h2 className={styles.linkHeading}>{footerLinksTitle}</h2>
             <ul className={styles.ul}>
-              <li className={styles.li}>
-                <Link href={"/"}>Home</Link>
-              </li>
-              <li className={styles.li}>
-                <Link href={"/"}>Home</Link>
-              </li>
-              <li className={styles.li}>
-                <Link href={"/"}>Home</Link>
-              </li>
-              <li className={styles.li}>
-                <Link href={"/"}>Home</Link>
-              </li>
-              <li className={styles.li}>
-                <Link href={"/"}>Home</Link>
-              </li>
-              <li className={styles.li}>
-                <Link href={"/"}>Home</Link>
-              </li>
-              <li className={styles.li}>
-                <Link href={"/"}>Home</Link>
-              </li>
-              <li className={styles.li}>
-                <Link href={"/"}>Home</Link>
-              </li>
-              <li className={styles.li}>
-                <Link href={"/"}>Home</Link>
-              </li>
-              <li className={styles.li}>
-                <Link href={"/"}>Home</Link>
-              </li>
-              <li className={styles.li}>
-                <Link href={"/"}>Home</Link>
-              </li>
+              {footerLinks.map((link, index) => {
+                return (
+                  <li className={styles.li} key={index}>
+                    <Link href={link.value}>{link.key}</Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </section>

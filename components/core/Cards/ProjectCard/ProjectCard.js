@@ -55,9 +55,9 @@ export default function ProjectCard({
             {postedOn && (
               <time
                 className={styles.time}
-                dateTime={postedOn.substring(0, 10)}
+                dateTime={postedOn}
               >
-                {postedOn.substring(0, 10)}
+                {postedOn}
               </time>
             )}
             {status && status.toLowerCase() == "completed" ? (

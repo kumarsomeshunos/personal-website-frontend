@@ -1,33 +1,48 @@
+import Link from "next/link";
 import MainButton from "../../Buttons/MainButton/MainButton";
 import styles from "./NowCard.module.css";
 import Image from "next/image";
 
-export default function NowCard({posterImage}) {
+// Change posterImage width and height depending on type of card (movie, song, book)
+
+export default function NowCard({
+  posterImage,
+  posterImageAlt,
+  posterImageWidth,
+  posterImageHeight,
+  nowTitle,
+  songTitle,
+  songArtist,
+  songAlbum,
+  description,
+  buttonText,
+  buttonLink,
+  rNowTitle,
+  rNowDescription,
+  rNowButtonText,
+  rNowButtonLink,
+}) {
   return (
     <article className={styles.main}>
       <div className={styles.wrapper}>
         <div className={styles.leftPortion}>
           <Image
             src={posterImage}
-            width={400}
-            height={400}
-            alt="Now Card Image"
+            width={posterImageWidth}
+            height={posterImageHeight}
+            alt={posterImageAlt}
           />
           <div className={styles.songInfo}>
-            <h1 className={styles.title}>Now Listening</h1>
+            <h1 className={styles.title}>{nowTitle}</h1>
             <hr />
+            <h2 className={styles.artistAndAlbum}>{songTitle}</h2>
             <h2 className={styles.artistAndAlbum}>
-              Close To You
+              {songArtist} &bull; {songAlbum}
             </h2>
-            <h2 className={styles.artistAndAlbum}>
-              Gracie Abrams &bull; The Secret of Us
-            </h2>
-            <p className={styles.mySpotify}>
-              Well, you can checkout my playlist on <a href="/">Spotify</a>
-            </p>
+            <p className={styles.mySpotify}>{description}</p>
             <MainButton
-              href={"/"}
-              text={"Listen this song on Spotify"}
+              href={buttonLink}
+              text={buttonText}
               background={"transparent"}
               border={"2px solid green"}
               padding={"0.1rem 0.5rem"}
@@ -42,26 +57,21 @@ export default function NowCard({posterImage}) {
           </div>
         </div>
         <div className={styles.rightPortion}>
-          <h1 className={styles.title}>Other things I'm upto</h1>
+          <h1 className={styles.title}>{rNowTitle}</h1>
           <hr />
-          <h2 className={styles.artistAndAlbum}>
-            Gracie Abrams &bull; The Secret of Us
-          </h2>
-          <p className={styles.mySpotify}>
-            Well, you can checkout my playlist on <a href="/">Spotify</a>
-          </p>
+          <p className={styles.mySpotify}>{rNowDescription}</p>
           <MainButton
-          padding={"0.1rem 0.5rem"}
-          paddingHover={"0.1rem 0.5rem"}
-          background={"transparent"}
-backgroundHover={"black"}
-color={"black"}
-colorHover={"white"}
-border={"2px solid black"}
-borderHover={"2px solid white"}
-                      text={"Wanna see more?"}
-                      href={"/"}
-                    />
+            padding={"0.1rem 0.5rem"}
+            paddingHover={"0.1rem 0.5rem"}
+            background={"transparent"}
+            backgroundHover={"black"}
+            color={"black"}
+            colorHover={"white"}
+            border={"2px solid black"}
+            borderHover={"2px solid white"}
+            text={rNowButtonText}
+            href={rNowButtonLink}
+          />
         </div>
       </div>
     </article>

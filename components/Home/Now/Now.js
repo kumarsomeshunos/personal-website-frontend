@@ -11,7 +11,7 @@ export default function Now({
   heading,
   subheading,
   backgroundImageName,
-  posterImage
+  now,
 }) {
   return (
     <section className={styles.main}>
@@ -22,12 +22,28 @@ export default function Now({
         filterWallpaper={filterWallpaper}
       >
         <section className={styles.wrapper}>
-          {/* <Heading
+          <Heading
             heading={heading}
             subheading={subheading}
             backgroundImageName={backgroundImageName}
-          /> */}
-          <NowCard posterImage={posterImage} />
+          />
+          <NowCard
+            posterImage={now.posterImage}
+            posterImageAlt={now.posterImageAlt}
+            posterImageHeight={now.posterImageHeight}
+            posterImageWidth={now.posterImageWidth}
+            nowTitle={now.nowTitle}
+            songTitle={now.songTitle}
+            songArtist={now.songArtist}
+            songAlbum={now.songAlbum}
+            description={now.description}
+            buttonText={now.buttonText}
+            buttonLink={now.buttonLink}
+            rNowTitle={now.rNowTitle}
+            rNowDescription={now.rNowDescription}
+            rNowButtonText={now.rNowButtonText}
+            rNowButtonLink={now.rNowButtonLink}
+          />
         </section>
       </SectionWrapper>
     </section>

@@ -13,8 +13,8 @@ export default function Navbar({
   colorMain,
   backgroundWallpaper,
   filterWallpaper,
-  name,
-  version,
+  name = "Somesh Kumar",
+  version = null,
   navbarLinks,
 }) {
   return (
@@ -27,8 +27,8 @@ export default function Navbar({
       >
         <section className={styles.wrapper}>
           <span className={`${styles.logo} ${ubuntu.className}`}>
-            <Link href={"/"}>{name || "Somesh Kumar"}</Link>
-            <span className={styles.version}>{version || null}</span>
+            <Link href={"/"}>{name}</Link>
+            <span className={styles.version}>{version}</span>
           </span>
           <ul className={styles.ul}>
             {navbarLinks.map((navbarLink, index) => {

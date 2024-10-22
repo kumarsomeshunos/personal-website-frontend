@@ -8,15 +8,15 @@ export default function CustomImage({
   altImage,
   widthImage,
   heightImage,
-  layoutImage,
-  objectFitImage,
-  paddingSection,
-  positionDiv,
-  widthDiv,
-  heightDiv,
-  borderRadiusDiv,
-  overflowDiv,
-  boxShadowDiv,
+  layoutImage = "responsive",
+  objectFitImage = "cover",
+  paddingSection = "0",
+  positionDiv = "relative",
+  widthDiv = "100%",
+  heightDiv = "auto",
+  borderRadiusDiv = "0px",
+  overflowDiv = "hidden",
+  boxShadowDiv = "none",
   hrefLink,
   textLink,
   textParagraph,
@@ -28,35 +28,27 @@ export default function CustomImage({
     heightImage && (
       <section
         style={{
-          padding: paddingSection || "0",
+          padding: paddingSection,
         }}
       >
         <div
           style={{
-            position: positionDiv || "relative",
-            width: widthDiv || "100%",
-            height: heightDiv || "auto",
-            borderRadius: borderRadiusDiv || "0px",
-            overflow: overflowDiv || "hidden",
-            boxShadow: boxShadowDiv || "none",
+            position: positionDiv,
+            width: widthDiv,
+            height: heightDiv,
+            borderRadius: borderRadiusDiv,
+            overflow: overflowDiv,
+            boxShadow: boxShadowDiv,
           }}
         >
-          {/* <Image
-                    src={srcImage}
-                    alt={altImage}
-                    width={widthImage}
-                    height={heightImage}
-                    layout={layoutImage || "responsive"}
-                    objectFit={objectFitImage || "cover"}
-                /> */}
           <div className={styles.desktopImage}>
             <Image
               src={srcImage}
               alt={altImage}
               width={widthImage}
               height={heightImage}
-              layout={layoutImage || "responsive"}
-              objectFit={objectFitImage || "cover"}
+              layout={layoutImage}
+              objectFit={objectFitImage}
             />
           </div>
           <div className={styles.mobileImage}>
@@ -65,8 +57,8 @@ export default function CustomImage({
               alt={altImage}
               width={widthImage}
               height={heightImage}
-              layout={layoutImage || "responsive"}
-              objectFit={objectFitImage || "cover"}
+              layout={layoutImage}
+              objectFit={objectFitImage}
             />
           </div>
         </div>

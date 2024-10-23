@@ -1,3 +1,4 @@
+import { headers } from "next/headers";
 import End from "@/components/core/Footer/End";
 import Footer from "@/components/core/Footer/Footer";
 import Navbar from "@/components/core/Navbar/Navbar";
@@ -14,7 +15,14 @@ import {
   footerData,
 } from "@/data";
 
-export default function Home() {
+async function fetchData() {
+  const response = await fetch(`http://home.kumarsomesh.in:3000/api/portfolio/bases?${headers().get('x-theme-id')}`);
+  const data = await response.json();
+  console.log(data);
+}
+
+export default async function Home() {
+  // await fetchData()
   return (
     <>
       <Navbar

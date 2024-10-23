@@ -19,43 +19,43 @@ export default function Dropdown() {
       </li>
       <ul className={styles.ul}>
         <li className={styles.themeSelect}>
-          <a href="/">PureWhite</a>
+          <a href="/themes/purewhite">PureWhite</a>
         </li>
         <li className={styles.li}>
-          <a href="/">AllDark</a>
+          <a href="/themes/alldark">AllDark</a>
         </li>
         <li className={styles.li}>
-          <a href="/">GlossyRed</a>
+          <a href="/themes/glossyred">GlossyRed</a>
         </li>
         <li className={styles.li}>
-          <a href="/">OceanBlue</a>
+          <a href="/themes/oceanblue">OceanBlue</a>
         </li>
         <li className={styles.li}>
-          <a href="/">ForestGreen</a>
+          <a href="/themes/forestgreen">ForestGreen</a>
         </li>
         <li className={styles.li}>
-          <a href="/">SunsetOrange</a>
+          <a href="/themes/sunsetorange">SunsetOrange</a>
         </li>
         <li className={styles.li}>
-          <a href="/">RoyalPurple</a>
+          <a href="/themes/royalpurple">RoyalPurple</a>
         </li>
         <li className={styles.li}>
-          <a href="/">SteelGrey</a>
+          <a href="/themes/steelgrey">SteelGrey</a>
         </li>
         <li className={styles.li}>
-          <a href="/">LemonYellow</a>
+          <a href="/themes/lemonyellow">LemonYellow</a>
         </li>
         <li className={styles.li}>
-          <a href="/">MidnightBlack</a>
+          <a href="/themes/midnightblack">MidnightBlack</a>
         </li>
         <li className={styles.li}>
-          <a href="/">SoftPink</a>
+          <a href="/themes/softpink">SoftPink</a>
         </li>
         <li className={styles.li}>
-          <a href="/">MysticTeal</a>
+          <a href="/themes/misticteal">MysticTeal</a>
         </li>
         <li className={styles.li}>
-          <a href="/">GoldenSand</a>
+          <a href="/themes/goldensand">GoldenSand</a>
         </li>
       </ul>
     </div>

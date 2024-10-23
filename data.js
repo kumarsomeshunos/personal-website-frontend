@@ -1,10 +1,108 @@
 let baseData = {
-  backgroundMain: "white",
-  colorMain: "black",
-  backgroundWallpaper: "white",
-  filterWallpaper: "blur(0px)",
-  linkBorderBottom: "1px solid rgba(0, 0, 0, 0.3)",
-  linkBackgroundColor: "black",
+  purewhite: {
+    backgroundMain: "white",
+    colorMain: "#2c3e50", // Dark Blue-Grey for a sophisticated look and visibility
+    backgroundWallpaper: "white",
+    filterWallpaper: "blur(0px)",
+    linkBorderBottom: "1px solid rgba(44, 62, 80, 0.6)", // Matches the dark blue-grey text
+    linkBackgroundColor: "#2c3e50",
+  },
+  alldark: {
+    backgroundMain: "black",
+    colorMain: "#f1c40f", // Bright Yellow for contrast
+    backgroundWallpaper: "black",
+    filterWallpaper: "blur(0px)",
+    linkBorderBottom: "1px solid rgba(241, 196, 15, 0.7)", // Matches the yellow text
+    linkBackgroundColor: "#f1c40f",
+  },
+  glossyred: {
+    backgroundMain: "linear-gradient(135deg, #ff4d4d, #ff1a1a)",
+    colorMain: "#f8f9fa", // Light Grey for soft contrast
+    backgroundWallpaper: "#b30000",
+    filterWallpaper: "blur(2px)",
+    linkBorderBottom: "1px solid rgba(248, 249, 250, 0.8)", // Matches the light grey text
+    linkBackgroundColor: "#b30000",
+  },
+  oceanblue: {
+    backgroundMain: "linear-gradient(135deg, #0077b6, #0096c7)",
+    colorMain: "#caf0f8", // Light Cyan for an oceanic vibe
+    backgroundWallpaper: "#023e8a",
+    filterWallpaper: "blur(2px)",
+    linkBorderBottom: "1px solid rgba(202, 240, 248, 0.8)", // Matches the cyan text
+    linkBackgroundColor: "#023e8a",
+  },
+  forestgreen: {
+    backgroundMain: "#2d6a4f",
+    colorMain: "#c7f9cc", // Light Mint Green for a fresh look
+    backgroundWallpaper: "#1b4332",
+    filterWallpaper: "blur(2px)",
+    linkBorderBottom: "1px solid rgba(199, 249, 204, 0.8)", // Matches the mint green text
+    linkBackgroundColor: "#1b4332",
+  },
+  sunsetorange: {
+    backgroundMain: "linear-gradient(135deg, #f77f00, #f94144)",
+    colorMain: "#fefae0", // Soft Cream for warmth and contrast
+    backgroundWallpaper: "#d62828",
+    filterWallpaper: "blur(2px)",
+    linkBorderBottom: "1px solid rgba(254, 250, 224, 0.8)", // Matches the cream text
+    linkBackgroundColor: "#d62828",
+  },
+  royalpurple: {
+    backgroundMain: "#5a189a",
+    colorMain: "#e0aaff", // Light Lavender for a royal touch
+    backgroundWallpaper: "#3c096c",
+    filterWallpaper: "blur(2px)",
+    linkBorderBottom: "1px solid rgba(224, 170, 255, 0.8)", // Matches the lavender text
+    linkBackgroundColor: "#3c096c",
+  },
+  steelgrey: {
+    backgroundMain: "linear-gradient(135deg, #6c757d, #adb5bd)",
+    colorMain: "#f8f9fa", // Light Grey for contrast
+    backgroundWallpaper: "#495057",
+    filterWallpaper: "blur(0px)",
+    linkBorderBottom: "1px solid rgba(248, 249, 250, 0.8)", // Matches the grey text
+    linkBackgroundColor: "#495057",
+  },
+  lemonyellow: {
+    backgroundMain: "#ffeb3b",
+    colorMain: "#37474f", // Deep Blue-Grey for a striking contrast
+    backgroundWallpaper: "#fbc02d",
+    filterWallpaper: "blur(2px)",
+    linkBorderBottom: "1px solid rgba(55, 71, 79, 0.6)", // Matches the blue-grey text
+    linkBackgroundColor: "#fbc02d",
+  },
+  midnightblack: {
+    backgroundMain: "#121212",
+    colorMain: "#90e0ef", // Light Blue for a cool, futuristic feel
+    backgroundWallpaper: "#000000",
+    filterWallpaper: "blur(1px)",
+    linkBorderBottom: "1px solid rgba(144, 224, 239, 0.8)", // Matches the light blue text
+    linkBackgroundColor: "#000000",
+  },
+  softpink: {
+    backgroundMain: "linear-gradient(135deg, #ffb6c1, #ffc1e3)",
+    colorMain: "#5d4037", // Warm Brown for a soft, cozy feel
+    backgroundWallpaper: "#ff69b4",
+    filterWallpaper: "blur(2px)",
+    linkBorderBottom: "1px solid rgba(93, 64, 55, 0.6)", // Matches the brown text
+    linkBackgroundColor: "#ff69b4",
+  },
+  misticteal: {
+    backgroundMain: "#008080",
+    colorMain: "#b2f7ef", // Light Aqua for an ethereal vibe
+    backgroundWallpaper: "#004d4d",
+    filterWallpaper: "blur(2px)",
+    linkBorderBottom: "1px solid rgba(178, 247, 239, 0.8)", // Matches the aqua text
+    linkBackgroundColor: "#004d4d",
+  },
+  goldensand: {
+    backgroundMain: "linear-gradient(135deg, #e0c097, #d2b48c)",
+    colorMain: "#8b4513", // Saddle Brown for an earthy tone
+    backgroundWallpaper: "#c19a6b",
+    filterWallpaper: "blur(1px)",
+    linkBorderBottom: "1px solid rgba(139, 69, 19, 0.6)", // Matches the brown text
+    linkBackgroundColor: "#c19a6b",
+  },
 };
 
 let navbarData = {
@@ -316,6 +414,13 @@ let footerData = {
   ],
 };
 
+let endData = {
+  backgroundMain: undefined,
+  colorMain: undefined,
+  backgroundWallpaper: undefined,
+  filterWallpaper: undefined,
+};
+
 let featuredProject = {
   backgroundMain: undefined,
   colorMain: undefined,
@@ -470,6 +575,7 @@ export {
   blogsSectionData,
   nowSectionData,
   footerData,
+  endData,
   featuredProject,
   featuredBlog,
   nowMovieData,

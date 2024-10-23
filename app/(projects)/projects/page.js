@@ -7,6 +7,7 @@ import {
   navbarData,
   projectsSectionData,
   footerData,
+  endData,
   featuredProject,
 } from "@/data";
 import FeaturedProjecet from "@/components/Projects/FeaturedProject/FeaturedProject";
@@ -55,7 +56,12 @@ export default function ProjectsPage() {
         footerLinksTitle={footerData.footerLinksTitle}
         footerLinks={footerData.footerLinks}
       />
-      <End backgroundWallpaper={"white"} colorMain={"black"} />
+      <End
+        backgroundMain={endData.backgroundMain}
+        colorMain={endData.colorMain}
+        backgroundWallpaper={endData.backgroundWallpaper}
+        filterWallpaper={endData.filterWallpaper}
+      />
     </>
   );
 }

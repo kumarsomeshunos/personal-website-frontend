@@ -15,7 +15,7 @@ export function middleware(request) {
   }
 
   const response = NextResponse.next();
-  response.headers.set("theme-name", themeName);
+  response.headers.set("themeName", themeName);
 
   return response;
 }

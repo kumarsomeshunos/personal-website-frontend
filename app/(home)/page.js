@@ -13,12 +13,17 @@ import {
   blogsSectionData,
   nowSectionData,
   footerData,
+  endData,
 } from "@/data";
 
 async function fetchData() {
-  const response = await fetch(`http://home.kumarsomesh.in:3000/api/portfolio/bases?${headers().get('x-theme-id')}`);
+  const response = await fetch(
+    `http://home.kumarsomesh.in:3000/api/portfolio/bases?${headers().get(
+      "themeName"
+    )}`
+  );
   const data = await response.json();
-  console.log(data);
+  console.log(headers().get("themeName"));
 }
 
 export default async function Home() {
@@ -89,7 +94,12 @@ export default async function Home() {
         footerLinksTitle={footerData.footerLinksTitle}
         footerLinks={footerData.footerLinks}
       />
-      <End backgroundWallpaper={"white"} colorMain={"black"} />
+      <End
+        backgroundMain={endData.backgroundMain}
+        colorMain={endData.colorMain}
+        backgroundWallpaper={endData.backgroundWallpaper}
+        filterWallpaper={endData.filterWallpaper}
+      />
     </>
   );
 }

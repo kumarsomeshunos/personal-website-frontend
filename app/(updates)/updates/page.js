@@ -3,7 +3,7 @@ import Navbar from "@/components/core/Navbar/Navbar";
 import Updates from "@/components/Updates/Updates";
 import Footer from "@/components/core/Footer/Footer";
 import End from "@/components/core/Footer/End";
-import { navbarData, footerData } from "@/data";
+import { navbarData, footerData, endData } from "@/data";
 
 export default function ProjectsPage() {
   return (
@@ -34,7 +34,12 @@ export default function ProjectsPage() {
         footerLinksTitle={footerData.footerLinksTitle}
         footerLinks={footerData.footerLinks}
       />
-      <End backgroundWallpaper={"white"} colorMain={"black"} />
+      <End
+        backgroundMain={endData.backgroundMain}
+        colorMain={endData.colorMain}
+        backgroundWallpaper={endData.backgroundWallpaper}
+        filterWallpaper={endData.filterWallpaper}
+      />
     </>
   );
 }

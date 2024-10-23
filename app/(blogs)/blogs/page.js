@@ -3,7 +3,7 @@ import Navbar from "@/components/core/Navbar/Navbar";
 import Blogs from "@/components/Home/Blogs/Blogs";
 import Footer from "@/components/core/Footer/Footer";
 import End from "@/components/core/Footer/End";
-import { navbarData, blogsSectionData, footerData, featuredBlog } from "@/data";
+import { navbarData, blogsSectionData, footerData, endData, featuredBlog } from "@/data";
 import FeaturedBlog from "@/components/Blogs/FeaturedBlog/FeaturedBlog";
 
 export default function BlogsPage() {
@@ -50,7 +50,12 @@ export default function BlogsPage() {
         footerLinksTitle={footerData.footerLinksTitle}
         footerLinks={footerData.footerLinks}
       />
-      <End backgroundWallpaper={"white"} colorMain={"black"} />
+      <End
+        backgroundMain={endData.backgroundMain}
+        colorMain={endData.colorMain}
+        backgroundWallpaper={endData.backgroundWallpaper}
+        filterWallpaper={endData.filterWallpaper}
+      />
     </>
   );
 }

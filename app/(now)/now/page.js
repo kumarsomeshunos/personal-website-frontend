@@ -7,6 +7,7 @@ import {
   navbarData,
   nowSectionData,
   footerData,
+  endData,
   nowMovieData,
   nowBookData,
 } from "@/data";
@@ -65,7 +66,12 @@ export default function NowPage() {
         footerLinksTitle={footerData.footerLinksTitle}
         footerLinks={footerData.footerLinks}
       />
-      <End backgroundWallpaper={"white"} colorMain={"black"} />
+      <End
+        backgroundMain={endData.backgroundMain}
+        colorMain={endData.colorMain}
+        backgroundWallpaper={endData.backgroundWallpaper}
+        filterWallpaper={endData.filterWallpaper}
+      />
     </>
   );
 }

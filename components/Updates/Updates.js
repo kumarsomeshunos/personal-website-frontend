@@ -87,24 +87,71 @@ let updateDetailsHtml2 = `<section id="introduction">
             <p>The Dummy Project is a sample project designed to showcase how to structure documentation for any project. This is the second update.  The Dummy Project is a sample project designed to showcase how to structure documentation for any project. This is the second update. The Dummy Project is a sample project designed to showcase how to structure documentation for any project. This is the second update. The Dummy Project is a sample project designed to showcase how to structure documentation for any project. This is the second update. The Dummy Project is a sample project designed to showcase how to structure documentation for any project. This is the second update. </p>
         </section>`;
 
-export default function Updates({ backgroundMain,
-    colorMain,
-    backgroundWallpaper,
-    filterWallpaper, }) {
-    return (
-        <section className={styles.main}>
-            <SectionWrapper backgroundMain={backgroundMain}
-                colorMain={colorMain}
-                backgroundWallpaper={backgroundWallpaper}
-                filterWallpaper={filterWallpaper}>
-                <Heading heading={"Updates"} subheading={"Check out my cool stuff – updates"} />
-                <UpdateCard updateDetailsHtml={updateDetailsHtml2} backgroundHover={"#404"} colorHover={"#fff"} color={"black"} border={"1px solid black"} />
-                <UpdateCard updateDetailsHtml={updateDetailsHtml2} backgroundHover={"#404"} colorHover={"#fff"} color={"black"} border={"1px solid black"} />
-                <UpdateCard updateDetailsHtml={updateDetailsHtml2} backgroundHover={"#404"} colorHover={"#fff"} color={"black"} border={"1px solid black"} />
-                <UpdateCard updateDetailsHtml={updateDetailsHtml2} backgroundHover={"#404"} colorHover={"#fff"} color={"black"} border={"1px solid black"} />
-                <UpdateCard updateDetailsHtml={updateDetailsHtml2} backgroundHover={"#404"} colorHover={"#fff"} color={"black"} border={"1px solid black"} />
-                <UpdateCard updateDetailsHtml={updateDetailsHtml} backgroundHover={"#540"} colorHover={"#fff"} color={"black"} border={"1px solid black"} />
-            </SectionWrapper>
-        </section>
-    );
+export default function Updates({
+  backgroundMain,
+  colorMain,
+  backgroundWallpaper,
+  filterWallpaper,
+  heading = "Updates",
+  subheading,
+  backgroundImageName,
+}) {
+  return (
+    <section className={styles.main}>
+      <SectionWrapper
+        backgroundMain={backgroundMain}
+        colorMain={colorMain}
+        backgroundWallpaper={backgroundWallpaper}
+        filterWallpaper={filterWallpaper}
+      >
+        <Heading
+          heading={heading}
+          subheading={subheading}
+          backgroundImageName={backgroundImageName}
+        />
+        <UpdateCard
+          updateDetailsHtml={updateDetailsHtml2}
+          backgroundHover={"#404"}
+          colorHover={"#fff"}
+          color={"black"}
+          border={"1px solid black"}
+        />
+        <UpdateCard
+          updateDetailsHtml={updateDetailsHtml2}
+          backgroundHover={"#404"}
+          colorHover={"#fff"}
+          color={"black"}
+          border={"1px solid black"}
+        />
+        <UpdateCard
+          updateDetailsHtml={updateDetailsHtml2}
+          backgroundHover={"#404"}
+          colorHover={"#fff"}
+          color={"black"}
+          border={"1px solid black"}
+        />
+        <UpdateCard
+          updateDetailsHtml={updateDetailsHtml2}
+          backgroundHover={"#404"}
+          colorHover={"#fff"}
+          color={"black"}
+          border={"1px solid black"}
+        />
+        <UpdateCard
+          updateDetailsHtml={updateDetailsHtml2}
+          backgroundHover={"#404"}
+          colorHover={"#fff"}
+          color={"black"}
+          border={"1px solid black"}
+        />
+        <UpdateCard
+          updateDetailsHtml={updateDetailsHtml}
+          backgroundHover={"#540"}
+          colorHover={"#fff"}
+          color={"black"}
+          border={"1px solid black"}
+        />
+      </SectionWrapper>
+    </section>
+  );
 }

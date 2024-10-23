@@ -39,7 +39,12 @@ export default function Navbar({
                 </li>
               );
             })}
-            <Dropdown />
+            <Dropdown
+              backgroundMain={backgroundMain}
+              colorMain={colorMain}
+              backgroundWallpaper={backgroundWallpaper}
+              filterWallpaper={filterWallpaper}
+            />
           </ul>
         </section>
       </SectionWrapper>

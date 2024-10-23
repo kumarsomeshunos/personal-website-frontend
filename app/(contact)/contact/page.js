@@ -3,7 +3,7 @@ import styles from "./page.module.css";
 import Navbar from "@/components/core/Navbar/Navbar";
 import Footer from "@/components/core/Footer/Footer";
 import End from "@/components/core/Footer/End";
-import { navbarData, footerData, endData } from "@/data";
+import { navbarData, footerData, endData, heroContactData } from "@/data";
 
 export default function Contact() {
   return (
@@ -18,10 +18,13 @@ export default function Contact() {
         navbarLinks={navbarData.navbarLinks}
       />
       <HeroContact
-        // backgroundMain={"linear-gradient(270deg, #000000 0%, #093e4c 50%, #1a1a1c 100%)"}
-        colorMain={"black"}
-        backgroundWallpaper={"white"}
-        backgroundMain={"none"}
+        backgroundMain={heroContactData.backgroundMain}
+        colorMain={heroContactData.colorMain}
+        backgroundWallpaper={heroContactData.backgroundWallpaper}
+        filterWallpaper={heroContactData.filterWallpaper}
+        heading={heroContactData.heading}
+        subheading={heroContactData.subheading}
+        backgroundImageName={heroContactData.backgroundImageName}
       />
       <Footer
         backgroundMain={footerData.backgroundMain}

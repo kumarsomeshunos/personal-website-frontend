@@ -54,5 +54,7 @@ Data integration from API's should be done in pages except if the componenet inc
  - Add suspense loading and skeleton screens.
  - Dynamic width and height of Image calculation.
  - Drop shadow and boder bottom in navbar (dynamic).
+ - Udpate Dropdown component better, make it dynamic.
+ - Udpate contacts and updates page, make it dynamic.
 
 > Some tools I buit over the years in college (notes, pdf edit, handwritting, etc)

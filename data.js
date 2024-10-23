@@ -1,106 +1,114 @@
 let baseData = {
   purewhite: {
     backgroundMain: "white",
-    colorMain: "#2c3e50", // Dark Blue-Grey for a sophisticated look and visibility
-    backgroundWallpaper: "white",
+    colorMain: "#2c3e50", // Dark Blue-Grey for visibility
+    backgroundWallpaper:
+      "linear-gradient(90deg, rgba(240,240,240,1) 0%, rgba(200,200,200,1) 100%)", // Subtle gradient
     filterWallpaper: "blur(0px)",
-    linkBorderBottom: "1px solid rgba(44, 62, 80, 0.6)", // Matches the dark blue-grey text
+    linkBorderBottom: "1px solid rgba(44, 62, 80, 0.6)",
     linkBackgroundColor: "#2c3e50",
   },
   alldark: {
     backgroundMain: "black",
     colorMain: "#f1c40f", // Bright Yellow for contrast
-    backgroundWallpaper: "black",
+    backgroundWallpaper: "#1b1b1b", // Solid dark grey
     filterWallpaper: "blur(0px)",
-    linkBorderBottom: "1px solid rgba(241, 196, 15, 0.7)", // Matches the yellow text
+    linkBorderBottom: "1px solid rgba(241, 196, 15, 0.7)",
     linkBackgroundColor: "#f1c40f",
   },
   glossyred: {
-    backgroundMain: "linear-gradient(135deg, #ff4d4d, #ff1a1a)",
-    colorMain: "#f8f9fa", // Light Grey for soft contrast
-    backgroundWallpaper: "#b30000",
+    backgroundMain: "#ff4d4d",
+    colorMain: "#f8f9fa", // Light Grey for contrast
+    backgroundWallpaper:
+      "linear-gradient(90deg, rgba(255,77,77,1) 0%, rgba(200,0,0,1) 100%)", // Vibrant red gradient
     filterWallpaper: "blur(2px)",
-    linkBorderBottom: "1px solid rgba(248, 249, 250, 0.8)", // Matches the light grey text
+    linkBorderBottom: "1px solid rgba(248, 249, 250, 0.8)",
     linkBackgroundColor: "#b30000",
   },
   oceanblue: {
-    backgroundMain: "linear-gradient(135deg, #0077b6, #0096c7)",
-    colorMain: "#caf0f8", // Light Cyan for an oceanic vibe
-    backgroundWallpaper: "#023e8a",
+    backgroundMain: "#0077b6",
+    colorMain: "#caf0f8", // Light Cyan for contrast
+    backgroundWallpaper:
+      "linear-gradient(90deg, rgba(0,119,182,1) 0%, rgba(2,62,138,1) 100%)", // Gradient from light to deep blue
     filterWallpaper: "blur(2px)",
-    linkBorderBottom: "1px solid rgba(202, 240, 248, 0.8)", // Matches the cyan text
+    linkBorderBottom: "1px solid rgba(202, 240, 248, 0.8)",
     linkBackgroundColor: "#023e8a",
   },
   forestgreen: {
     backgroundMain: "#2d6a4f",
-    colorMain: "#c7f9cc", // Light Mint Green for a fresh look
-    backgroundWallpaper: "#1b4332",
+    colorMain: "#c7f9cc", // Light Mint Green for contrast
+    backgroundWallpaper: "#1b4332", // Solid dark green
     filterWallpaper: "blur(2px)",
-    linkBorderBottom: "1px solid rgba(199, 249, 204, 0.8)", // Matches the mint green text
+    linkBorderBottom: "1px solid rgba(199, 249, 204, 0.8)",
     linkBackgroundColor: "#1b4332",
   },
   sunsetorange: {
-    backgroundMain: "linear-gradient(135deg, #f77f00, #f94144)",
-    colorMain: "#fefae0", // Soft Cream for warmth and contrast
-    backgroundWallpaper: "#d62828",
+    backgroundMain: "#f77f00",
+    colorMain: "#fefae0", // Soft Cream for warmth
+    backgroundWallpaper:
+      "linear-gradient(90deg, rgba(247,127,0,1) 0%, rgba(253,94,0,1) 100%)", // Gradient transitioning from light to deep orange
     filterWallpaper: "blur(2px)",
-    linkBorderBottom: "1px solid rgba(254, 250, 224, 0.8)", // Matches the cream text
+    linkBorderBottom: "1px solid rgba(254, 250, 224, 0.8)",
     linkBackgroundColor: "#d62828",
   },
   royalpurple: {
     backgroundMain: "#5a189a",
-    colorMain: "#e0aaff", // Light Lavender for a royal touch
-    backgroundWallpaper: "#3c096c",
+    colorMain: "#e0aaff", // Light Lavender for a royal look
+    backgroundWallpaper: "#3c096c", // Solid deep purple
     filterWallpaper: "blur(2px)",
-    linkBorderBottom: "1px solid rgba(224, 170, 255, 0.8)", // Matches the lavender text
+    linkBorderBottom: "1px solid rgba(224, 170, 255, 0.8)",
     linkBackgroundColor: "#3c096c",
   },
   steelgrey: {
-    backgroundMain: "linear-gradient(135deg, #6c757d, #adb5bd)",
+    backgroundMain: "#6c757d",
     colorMain: "#f8f9fa", // Light Grey for contrast
-    backgroundWallpaper: "#495057",
-    filterWallpaper: "blur(0px)",
-    linkBorderBottom: "1px solid rgba(248, 249, 250, 0.8)", // Matches the grey text
+    backgroundWallpaper:
+      "linear-gradient(90deg, rgba(108,117,125,1) 0%, rgba(144,164,174,1) 100%)", // Subtle grey gradient
+    filterWallpaper: "blur(1px)",
+    linkBorderBottom: "1px solid rgba(248, 249, 250, 0.8)",
     linkBackgroundColor: "#495057",
   },
   lemonyellow: {
     backgroundMain: "#ffeb3b",
-    colorMain: "#37474f", // Deep Blue-Grey for a striking contrast
-    backgroundWallpaper: "#fbc02d",
+    colorMain: "#37474f", // Deep Blue-Grey for contrast
+    backgroundWallpaper: "#fbc02d", // Solid mustard yellow
     filterWallpaper: "blur(2px)",
-    linkBorderBottom: "1px solid rgba(55, 71, 79, 0.6)", // Matches the blue-grey text
+    linkBorderBottom: "1px solid rgba(55, 71, 79, 0.6)",
     linkBackgroundColor: "#fbc02d",
   },
   midnightblack: {
     backgroundMain: "#121212",
-    colorMain: "#90e0ef", // Light Blue for a cool, futuristic feel
-    backgroundWallpaper: "#000000",
+    colorMain: "#90e0ef", // Light Blue for a futuristic look
+    backgroundWallpaper:
+      "linear-gradient(90deg, rgba(18,18,18,1) 0%, rgba(48,48,48,1) 100%)", // Subtle black gradient
     filterWallpaper: "blur(1px)",
-    linkBorderBottom: "1px solid rgba(144, 224, 239, 0.8)", // Matches the light blue text
+    linkBorderBottom: "1px solid rgba(144, 224, 239, 0.8)",
     linkBackgroundColor: "#000000",
   },
   softpink: {
-    backgroundMain: "linear-gradient(135deg, #ffb6c1, #ffc1e3)",
-    colorMain: "#5d4037", // Warm Brown for a soft, cozy feel
-    backgroundWallpaper: "#ff69b4",
+    backgroundMain: "#ffb6c1",
+    colorMain: "#5d4037", // Warm Brown for coziness
+    backgroundWallpaper:
+      "linear-gradient(90deg, rgba(255,182,193,1) 0%, rgba(255,105,180,1) 100%)", // Soft pink gradient
     filterWallpaper: "blur(2px)",
-    linkBorderBottom: "1px solid rgba(93, 64, 55, 0.6)", // Matches the brown text
+    linkBorderBottom: "1px solid rgba(93, 64, 55, 0.6)",
     linkBackgroundColor: "#ff69b4",
   },
   misticteal: {
     backgroundMain: "#008080",
-    colorMain: "#b2f7ef", // Light Aqua for an ethereal vibe
-    backgroundWallpaper: "#004d4d",
+    colorMain: "#b2f7ef", // Light Aqua for an ethereal look
+    backgroundWallpaper: "#004d4d", // Solid dark teal
     filterWallpaper: "blur(2px)",
-    linkBorderBottom: "1px solid rgba(178, 247, 239, 0.8)", // Matches the aqua text
+    linkBorderBottom: "1px solid rgba(178, 247, 239, 0.8)",
     linkBackgroundColor: "#004d4d",
   },
   goldensand: {
-    backgroundMain: "linear-gradient(135deg, #e0c097, #d2b48c)",
+    backgroundMain: "#e0c097",
     colorMain: "#8b4513", // Saddle Brown for an earthy tone
-    backgroundWallpaper: "#c19a6b",
+    backgroundWallpaper:
+      "linear-gradient(90deg, rgba(224,192,151,1) 0%, rgba(194,153,107,1) 100%)", // Golden sand gradient
     filterWallpaper: "blur(1px)",
-    linkBorderBottom: "1px solid rgba(139, 69, 19, 0.6)", // Matches the brown text
+    linkBorderBottom: "1px solid rgba(139, 69, 19, 0.6)",
     linkBackgroundColor: "#c19a6b",
   },
 };
@@ -108,7 +116,7 @@ let baseData = {
 let navbarData = {
   backgroundMain: "white",
   colorMain: undefined,
-  backgroundWallpaper: undefined,
+  backgroundWallpaper: "white",
   filterWallpaper: undefined,
   name: undefined,
   version: "MK-VII",
@@ -567,6 +575,26 @@ let nowBookData = {
   },
 };
 
+let heroContactData = {
+  backgroundMain: undefined,
+  colorMain: undefined,
+  backgroundWallpaper: undefined,
+  filterWallpaper: undefined,
+  heading: undefined,
+  subheading: "These are some snippets I've jotted down.",
+  backgroundImageName: undefined,
+};
+
+let updatesData = {
+  backgroundMain: undefined,
+  colorMain: undefined,
+  backgroundWallpaper: undefined,
+  filterWallpaper: undefined,
+  heading: undefined,
+  subheading: "These are some snippets I've jotted down.",
+  backgroundImageName: undefined,
+};
+
 export {
   baseData,
   navbarData,
@@ -580,4 +608,6 @@ export {
   featuredBlog,
   nowMovieData,
   nowBookData,
+  heroContactData,
+  updatesData,
 };

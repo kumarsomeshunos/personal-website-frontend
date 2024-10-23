@@ -114,6 +114,16 @@ a:hover::after {
   transform: scaleX(1);
 }
 
+/* Hide scrollbar for all elements in modern webkit-based browsers (Chrome, Safari) */
+* {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none;  /* For IE and Edge */
+}
+
+*::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

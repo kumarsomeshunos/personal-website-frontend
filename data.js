@@ -16,6 +16,10 @@ let navbarData = {
   version: "MK-VII",
   navbarLinks: [
     {
+      key: "Home",
+      value: "/",
+    },
+    {
       key: "Projects",
       value: "/projects",
     },

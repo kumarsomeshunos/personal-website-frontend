@@ -40,32 +40,32 @@
 
   /* Project Card Component */
   --defalut-backgroundProjectCard: transparent;
-  --deafult-borderProjectCard: 1px solid rgba(0, 0, 0, 0.5);
+  --deafult-borderProjectCard: "";
   --default-box-shadowProjectCard: 0px 0px 0px 0px white;
-  --default-colorProjectCard: white;
+  --default-colorProjectCard: "";
   --default-borderRadiusProjectCard: 10px;
   --default-textDecorationProjectCard: none;
   --default-transitionProjectCard: all 0.5s ease-in-out;
   --defalut-backgroundProjectCardHover: white;
-  --deafult-borderProjectCardHover: 1px solid rgba(255, 255, 255, 1);
+  --deafult-borderProjectCardHover: "";
   --default-box-shadowProjectCardHover: 0px 0px 0px 0px white;
-  --default-colorProjectCardHover: black;
+  --default-colorProjectCardHover: "";
   --default-borderRadiusProjectCardHover: 10px;
   --default-textDecorationProjectCardHover: none;
   --default-transitionProjectCardHover: all 0.5s ease-in-out;
 
   /* Blog Card Component */
   --defalut-backgroundBlogCard: transparent;
-  --deafult-borderBlogCard: 1px solid rgba(255, 255, 255, 0.5);
+  --deafult-borderBlogCard: "";
   --default-box-shadowBlogCard: 0px 0px 0px 0px white;
-  --default-colorBlogCard: white;
+  --default-colorBlogCard: "";
   --default-borderRadiusBlogCard: 10px;
   --default-textDecorationBlogCard: none;
   --default-transitionBlogCard: all 0.5s ease-in-out;
   --defalut-backgroundBlogCardHover: white;
-  --deafult-borderBlogCardHover: 1px solid rgba(255, 255, 255, 1);
+  --deafult-borderBlogCardHover: "";
   --default-box-shadowBlogCardHover: 0px 0px 0px 0px white;
-  --default-colorBlogCardHover: black;
+  --default-colorBlogCardHover: "";
   --default-borderRadiusBlogCardHover: 10px;
   --default-textDecorationBlogCardHover: none;
   --default-transitionBlogCardHover: all 0.5s ease-in-out;

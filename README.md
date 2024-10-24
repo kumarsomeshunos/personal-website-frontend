@@ -56,6 +56,8 @@ Data integration from API's should be done in pages except if the componenet inc
  - Drop shadow and boder bottom in navbar (dynamic).
  - Udpate Dropdown component better, make it dynamic.
  - Udpate contacts and updates page, make it dynamic.
+ - Udpate globals.css, blocking user defined styles.
+ - Update Now cards background color.
 
 > Use LLMs to generate configuration files for different personalities (themes)
 

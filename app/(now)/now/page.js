@@ -4,15 +4,16 @@ import Navbar from "@/components/core/Navbar/Navbar";
 import Now from "@/components/Home/Now/Now";
 import End from "@/components/core/Footer/End";
 import {
-  navbarData,
   nowSectionData,
   footerData,
   endData,
   nowMovieData,
   nowBookData,
 } from "@/data";
+import { navbarThemeingEngine } from "@/themeingEngine";
 
 export default function NowPage() {
+  const navbarData = navbarThemeingEngine();
   return (
     <>
       <Navbar

@@ -1,4 +1,3 @@
-import { headers } from "next/headers";
 import End from "@/components/core/Footer/End";
 import Footer from "@/components/core/Footer/Footer";
 import Navbar from "@/components/core/Navbar/Navbar";
@@ -7,27 +6,25 @@ import Hero from "@/components/Home/Hero/Hero";
 import Now from "@/components/Home/Now/Now";
 import Projects from "@/components/Home/Projects/Projects";
 import {
-  navbarData,
-  heroData,
-  projectsSectionData,
+  // navbarData,
+  // heroData,
+  // projectsSectionData,
   blogsSectionData,
   nowSectionData,
   footerData,
   endData,
 } from "@/data";
 
-async function fetchData() {
-  const response = await fetch(
-    `http://home.kumarsomesh.in:3000/api/portfolio/bases?${headers().get(
-      "themeName"
-    )}`
-  );
-  const data = await response.json();
-  console.log(headers().get("themeName"));
-}
+import {
+  navbarThemeingEngine,
+  heroThemeingEngine,
+  projectSectionThemeingEngine,
+} from "@/themeingEngine";
 
 export default async function Home() {
-  // await fetchData()
+  const navbarData = navbarThemeingEngine();
+  const heroData = heroThemeingEngine();
+  const projectsSectionData = projectSectionThemeingEngine();
   return (
     <>
       <Navbar

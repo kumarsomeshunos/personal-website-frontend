@@ -51,6 +51,24 @@ export default function Hero({
                       key={index}
                       text={heroButton.key}
                       href={heroButton.value}
+                      background={heroButton.background}
+                      border={heroButton.border}
+                      boxShadow={heroButton.boxShadow}
+                      color={heroButton.color}
+                      padding={heroButton.padding}
+                      margin={heroButton.margin}
+                      borderRadius={heroButton.borderRadius}
+                      textDecoration={heroButton.textDecoration}
+                      transition={heroButton.transition}
+                      backgroundHover={heroButton.backgroundHover}
+                      borderHover={heroButton.borderHover}
+                      boxShadowHover={heroButton.boxShadowHover}
+                      colorHover={heroButton.colorHover}
+                      paddingHover={heroButton.paddingHover}
+                      marginHover={heroButton.marginHover}
+                      borderRadiusHover={heroButton.borderRadiusHover}
+                      textDecorationHover={heroButton.textDecorationHover}
+                      transitionHover={heroButton.transitionHover}
                     />
                   );
                 })}

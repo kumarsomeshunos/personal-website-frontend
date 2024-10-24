@@ -4,15 +4,16 @@ import End from "@/components/core/Footer/End";
 import Navbar from "@/components/core/Navbar/Navbar";
 import Projects from "@/components/Home/Projects/Projects";
 import {
-  navbarData,
-  projectsSectionData,
   footerData,
   endData,
   featuredProject,
 } from "@/data";
 import FeaturedProjecet from "@/components/Projects/FeaturedProject/FeaturedProject";
+import { navbarThemeingEngine, projectSectionThemeingEngine } from "@/themeingEngine";
 
 export default function ProjectsPage() {
+  const navbarData = navbarThemeingEngine();
+  const projectsSectionData = projectSectionThemeingEngine();
   return (
     <>
       <Navbar

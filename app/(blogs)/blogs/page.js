@@ -3,10 +3,12 @@ import Navbar from "@/components/core/Navbar/Navbar";
 import Blogs from "@/components/Home/Blogs/Blogs";
 import Footer from "@/components/core/Footer/Footer";
 import End from "@/components/core/Footer/End";
-import { navbarData, blogsSectionData, footerData, endData, featuredBlog } from "@/data";
+import { blogsSectionData, footerData, endData, featuredBlog } from "@/data";
 import FeaturedBlog from "@/components/Blogs/FeaturedBlog/FeaturedBlog";
+import { navbarThemeingEngine } from "@/themeingEngine";
 
 export default function BlogsPage() {
+  const navbarData = navbarThemeingEngine();
   return (
     <>
       <Navbar

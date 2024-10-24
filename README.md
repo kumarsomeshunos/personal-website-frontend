@@ -57,4 +57,6 @@ Data integration from API's should be done in pages except if the componenet inc
  - Udpate Dropdown component better, make it dynamic.
  - Udpate contacts and updates page, make it dynamic.
 
+> Use LLMs to generate configuration files for different personalities (themes)
+
 > Some tools I buit over the years in college (notes, pdf edit, handwritting, etc)

@@ -3,9 +3,11 @@ import Navbar from "@/components/core/Navbar/Navbar";
 import Updates from "@/components/Updates/Updates";
 import Footer from "@/components/core/Footer/Footer";
 import End from "@/components/core/Footer/End";
-import { navbarData, footerData, endData, updatesData } from "@/data";
+import { footerData, endData, updatesData } from "@/data";
+import { navbarThemeingEngine } from "@/themeingEngine";
 
 export default function ProjectsPage() {
+  const navbarData = navbarThemeingEngine();
   return (
     <>
       <Navbar

@@ -53,10 +53,7 @@ export default function ProjectCard({
         {(postedOn || status) && (
           <div className={styles.timeAndStatus}>
             {postedOn && (
-              <time
-                className={styles.time}
-                dateTime={postedOn}
-              >
+              <time className={styles.time} dateTime={postedOn}>
                 {postedOn}
               </time>
             )}
@@ -78,14 +75,24 @@ export default function ProjectCard({
                     key={index}
                     text={link.key}
                     href={link.value}
-                    padding={"0.1rem 0.3rem"}
-                    paddingHover={"0.1rem 0.3rem"}
-                    borderRadius={"0.25rem"}
-                    borderRadiusHover={"0.25rem"}
-                    margin={"0.5rem 0.5rem 0 0"}
-                    marginHover={"0.5rem 0.5rem 0 0"}
-                    border={"1px solid black"}
-              borderHover={"1px solid black"}
+                    background={link.background}
+                    border={link.border}
+                    boxShadow={link.boxShadow}
+                    color={link.color}
+                    padding={link.padding}
+                    margin={link.margin}
+                    borderRadius={link.borderRadius}
+                    textDecoration={link.textDecoration}
+                    transition={link.transition}
+                    backgroundHover={link.backgroundHover}
+                    borderHover={link.borderHover}
+                    boxShadowHover={link.boxShadowHover}
+                    colorHover={link.colorHover}
+                    paddingHover={link.paddingHover}
+                    marginHover={link.marginHover}
+                    borderRadiusHover={link.borderRadiusHover}
+                    textDecorationHover={link.textDecorationHover}
+                    transitionHover={link.transitionHover}
                   />
                 );
               })}
@@ -94,14 +101,24 @@ export default function ProjectCard({
                 key={99}
                 text={"Read More"}
                 href={`projects/${slug}`}
-                padding={"0.1rem 0.3rem"}
-                paddingHover={"0.1rem 0.3rem"}
-                borderRadius={"0.25rem"}
-                borderRadiusHover={"0.25rem"}
-                margin={"0.5rem 0.5rem 0 0"}
-                marginHover={"0.5rem 0.5rem 0 0"}
-                border={"1px solid black"}
-              borderHover={"1px solid black"}
+                background={details.background}
+                    border={details.border}
+                    boxShadow={details.boxShadow}
+                    color={details.color}
+                    padding={details.padding}
+                    margin={details.margin}
+                    borderRadius={details.borderRadius}
+                    textDecoration={details.textDecoration}
+                    transition={details.transition}
+                    backgroundHover={details.backgroundHover}
+                    borderHover={details.borderHover}
+                    boxShadowHover={details.boxShadowHover}
+                    colorHover={details.colorHover}
+                    paddingHover={details.paddingHover}
+                    marginHover={details.marginHover}
+                    borderRadiusHover={details.borderRadiusHover}
+                    textDecorationHover={details.textDecorationHover}
+                    transitionHover={details.transitionHover}
               />
             )}
           </div>
